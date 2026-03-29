@@ -11,15 +11,15 @@ defaultContentLanguage = "zh"
 [languages]
   [languages.zh]
     languageCode = "zh-CN"
-    title = "Your Name - Digital Nomad | Tech | Life"
+    title = "Wen Linlong - Robotics Engineering | RL | Motion Control"
     weight = 1
   [languages.en]
     languageCode = "en-US"
-    title = "Your Name - Digital Nomad | Tech Insights | Life Stories"
+    title = "Wen Linlong - Robotics Engineering | Reinforcement Learning | Motion Control"
     weight = 2
   [languages.fr]
     languageCode = "fr-FR"
-    title = "Your Name - Nomade Numérique | Tech | Vie"
+    title = "Wen Linlong - Ingénierie Robotique | Apprentissage par Renforcement | Contrôle de Mouvement"
     weight = 3
 
 [params]
@@ -27,7 +27,7 @@ defaultContentLanguage = "zh"
   logo = "Wen Linlong"
   subtitle = "Robotics Engineering • Reinforcement Learning • Motion Control"
   description = "Undergraduate student in Robotics Engineering at Chongqing University, focusing on RL-based motion control and UAV system design"
-
+  
   # GitHub Information
   githubUsername = "wenlinlong220"
   githubUserId = "wenlinlong220"
@@ -41,75 +41,75 @@ defaultContentLanguage = "zh"
     name = "GitHub"
     class = "github"
     icon = "🐙"
-    description = "开源项目与代码仓库"
+    description = "Open source projects and code repositories"
     url = "https://github.com/wenlinlong220"
-    button_text = "查看项目"
+    button_text = "View Projects"
 
   [[params.social]]
     name = "LinkedIn"
     class = "linkedin"
     icon = "💼"
-    description = "专业简历与工作经历"
+    description = "Professional resume and work experience"
     url = "https://linkedin.com/in/wenlinlong"
-    button_text = "查看简历"
+    button_text = "View Resume"
 
   # Portfolio Items
   [[params.portfolio]]
-    title = "6-DOF 水下抓取机器人研发"
-    type = "科研项目"
+    title = "6-DOF Underwater Grasping Robot Development"
+    type = "Research Project"
     icon = "🤖"
-    description = "基于ROS2和Mujoco/Isaac Lab平台的PID与PPO运动控制系统设计，实现高鲁棒性的三维轨迹跟踪"
-    tags = ["ROS2", "Mujoco", "Isaac Lab", "PPO算法", "PID控制"]
+    description = "PID and PPO motion control system design based on ROS2 and Mujoco/Isaac Lab platforms, achieving highly robust 3D trajectory tracking"
+    tags = ["ROS2", "Mujoco", "Isaac Lab", "PPO Algorithm", "PID Control"]
     project_url = "/projects/underwater-robot/"
 
   [[params.portfolio]]
-    title = "全国大学生智能汽车竞赛"
-    type = "竞赛项目"
+    title = "National Undergraduate Intelligent Car Competition"
+    type = "Competition Project"
     icon = "🏎️"
-    description = "国家级一等奖，负责视觉巡线算法、运动控制系统搭建与YOLO目标检测模型部署"
-    tags = ["Ubuntu", "八邻域算法", "PID控制", "YOLO", "SSH/VNC"]
+    description = "National First Prize, responsible for vision line-following algorithms, motion control system setup and YOLO object detection model deployment"
+    tags = ["Ubuntu", "Eight-neighborhood Algorithm", "PID Control", "YOLO", "SSH/VNC"]
     project_url = "/projects/smart-car/"
 
   [[params.portfolio]]
-    title = "全国大学生数学竞赛"
-    type = "学术竞赛"
+    title = "National Undergraduate Mathematics Competition"
+    type = "Academic Competition"
     icon = "📐"
-    description = "重庆赛区省级一等奖，展示数学建模与问题解决能力"
-    tags = ["数学建模", "算法设计", "问题求解"]
+    description = "Provincial First Prize in Chongqing Division, demonstrating mathematical modeling and problem-solving abilities"
+    tags = ["Mathematical Modeling", "Algorithm Design", "Problem Solving"]
     project_url = "/projects/math-competition/"
 
   # Academic Timeline
   [[params.timeline]]
-    title = "国家奖学金"
-    type = "荣誉奖项"
+    title = "National Scholarship"
+    type = "Honor Award"
     icon = "🏆"
-    period = "2024年 & 2025年"
-    description = "连续两年获得国家奖学金，表彰在学术研究方面的卓越表现"
-    highlights = ["学术卓越", "综合排名前列", "科研能力突出"]
+    period = "2024 & 2025"
+    description = "Received National Scholarship for two consecutive years, recognizing outstanding performance in academic research"
+    highlights = ["Academic Excellence", "Top Ranking", "Outstanding Research Capability"]
 
   [[params.timeline]]
-    title = "全国大学生智能汽车竞赛"
-    type = "竞赛成就"
+    title = "National Undergraduate Intelligent Car Competition"
+    type = "Competition Achievement"
     icon = "🥇"
-    period = "2025年"
-    description = "获得国家级一等奖，负责视觉算法与运动控制系统"
-    highlights = ["国家级一等奖", "视觉巡线算法", "PID控制系统"]
+    period = "2025"
+    description = "National First Prize, responsible for vision algorithms and motion control systems"
+    highlights = ["National First Prize", "Vision Line-following Algorithm", "PID Control System"]
 
   [[params.timeline]]
-    title = "6-DOF水下机器人研发"
-    type = "科研项目"
+    title = "6-DOF Underwater Robot Development"
+    type = "Research Project"
     icon = "🔬"
-    period = "2026.02 - 至今"
-    description = "基于强化学习的水下机器人运动控制研究，论文筹备中"
-    highlights = ["ROS2平台", "PPO算法", "运动学反解", "三维轨迹跟踪"]
+    period = "Feb 2026 - Present"
+    description = "Research on reinforcement learning-based underwater robot motion control, paper in preparation"
+    highlights = ["ROS2 Platform", "PPO Algorithm", "Kinematic Inverse Solution", "3D Trajectory Tracking"]
 
   [[params.timeline]]
-    title = "课程助教"
-    type = "教学经历"
+    title = "Course Teaching Assistant"
+    type = "Teaching Experience"
     icon = "👨‍🏫"
-    period = "2025-2026学年"
-    description = "担任《控制理论基础》与《机械制图》课程助教，获优秀助教荣誉"
-    highlights = ["优秀助教", "朋辈辅导", "学习方法分享"]
+    period = "2025-2026 Academic Year"
+    description = "Served as TA for 'Control Theory Fundamentals' and 'Mechanical Drawing', awarded Excellent Teaching Assistant honor"
+    highlights = ["Excellent Teaching Assistant", "Peer Tutoring", "Learning Method Sharing"]
 
   # Contact Information
   [[params.contact]]

@@ -12,7 +12,6 @@ Hello, I'm **Wen Linlong** - an undergraduate student in Robotics Engineering at
 - **University**: Chongqing University
 - **College**: School of Mechanical and Vehicle Engineering  
 - **Major**: Robotics Engineering (Intelligence and Robotics方向)
-- **English Proficiency**: CET-4 483
 
 ## Research Interests
 
