@@ -41,14 +41,15 @@
 
 .terminal-title {
     color: #888;
-    font-family: 'Monaco', 'Menlo', monospace;
+    font-family: 'Source Code Pro', 'Monaco', 'Menlo', monospace;
     font-size: 0.9rem;
+    font-weight: 500;
 }
 
 .terminal-body {
     padding: 20px;
-    font-family: 'Monaco', 'Menlo', monospace;
-    line-height: 1.6;
+    font-family: 'Crimson Text', 'Georgia', 'Times New Roman', 'Times', serif;
+    line-height: 1.8;
 }
 
 .prompt-line {

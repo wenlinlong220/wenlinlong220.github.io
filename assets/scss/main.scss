@@ -20,10 +20,10 @@
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-family: 'Crimson Text', 'Georgia', 'Times New Roman', 'Times', serif;
   background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
   color: var(--text-primary);
-  line-height: 1.6;
+  line-height: 1.8;
   overflow-x: hidden;
 }
 
@@ -52,13 +52,15 @@ nav {
 }
 
 .logo {
+  font-family: 'Crimson Text', 'Palatino Linotype', 'Book Antiqua', 'Palatino', serif;
   font-size: 1.8rem;
-  font-weight: bold;
+  font-weight: 600;
   background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-decoration: none;
+  letter-spacing: 0.02em;
 }
 
 .nav-links {
@@ -128,6 +130,7 @@ section {
   background: radial-gradient(circle at 50% 50%, rgba(0, 212, 255, 0.1) 0%, transparent 50%);
   
   h1 {
+    font-family: 'Crimson Text', 'Palatino Linotype', 'Book Antiqua', 'Palatino', serif;
     font-size: clamp(2.5rem, 5vw, 4rem);
     margin-bottom: 1rem;
     background: linear-gradient(45deg, var(--primary-color), var(--secondary-color), var(--accent-color));
@@ -135,12 +138,14 @@ section {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     animation: glow 2s ease-in-out infinite alternate;
+    font-weight: 600;
   }
   
   p {
-    font-size: clamp(1rem, 2vw, 1.3rem);
+    font-size: clamp(1.1rem, 2vw, 1.4rem);
     margin-bottom: 2rem;
     opacity: 0.9;
+    letter-spacing: 0.01em;
   }
 }
 
@@ -154,11 +159,13 @@ section {
   padding: 12px 30px;
   border: none;
   border-radius: 50px;
+  font-family: 'Crimson Text', 'Georgia', 'Times New Roman', 'Times', serif;
   font-size: 1rem;
   cursor: pointer;
   transition: var(--transition);
   text-decoration: none;
   display: inline-block;
+  letter-spacing: 0.02em;
   
   &:focus {
     outline: 2px solid var(--primary-color);
@@ -205,11 +212,13 @@ section {
   }
   
   h2 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    margin-top: 3rem;
+    font-family: 'Crimson Text', 'Palatino Linotype', 'Book Antiqua', 'Palatino', serif;
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    margin-top: 2.5rem;
     color: var(--primary-color);
     text-align: center;
+    font-weight: 600;
   }
 }
 

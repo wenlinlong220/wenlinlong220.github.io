@@ -1,9 +1,10 @@
 .file-listing {
-    font-family: 'Monaco', 'Menlo', monospace;
+    font-family: 'Source Code Pro', 'Monaco', 'Menlo', monospace;
     background: rgba(255, 255, 255, 0.02);
     padding: 1rem;
     border-radius: 8px;
     border: 1px solid rgba(255, 255, 255, 0.1);
+    font-weight: 500;
 }
 
 .file-item {

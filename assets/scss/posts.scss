@@ -25,8 +25,8 @@
 
 .post-terminal-body {
     padding: 20px;
-    font-family: 'Monaco', 'Menlo', monospace;
-    line-height: 1.6;
+    font-family: 'Crimson Text', 'Georgia', 'Times New Roman', 'Times', serif;
+    line-height: 1.8;
     color: #e0e0e0;
     
     h1 {
@@ -51,26 +51,35 @@
     }
     
     code {
+        font-family: 'Source Code Pro', 'Monaco', 'Menlo', monospace;
         background: rgba(0, 212, 255, 0.1);
         padding: 2px 6px;
         border-radius: 3px;
         color: #00d4ff;
+        font-size: 0.9em;
     }
     
     pre {
+        font-family: 'Source Code Pro', 'Monaco', 'Menlo', monospace;
         background: #0a0a0a;
         padding: 1rem;
         border-radius: 5px;
         overflow-x: auto;
         margin: 1rem 0;
         border: 1px solid rgba(0, 212, 255, 0.2);
+        font-size: 0.9em;
+        line-height: 1.5;
     }
     
     blockquote {
-        border-left: 3px solid #9d50bb;
-        padding-left: 1rem;
-        margin: 1rem 0;
+        border-left: 4px solid #9d50bb;
+        padding-left: 1.5rem;
+        margin: 1.5rem 0;
         color: #ccc;
+        font-style: italic;
+        background: rgba(157, 80, 187, 0.05);
+        padding: 1rem 1.5rem;
+        border-radius: 0 5px 5px 0;
     }
     
     ul, ol {
