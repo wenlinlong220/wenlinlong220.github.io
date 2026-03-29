@@ -1,5 +1,5 @@
 <div class="academic-timeline">
-    <h3 style="color: #ffffff; margin-bottom: 2rem; text-align: center; font-weight: 700;">📚 Academic Timeline</h3>
+    <h3 style="color: var(--text-primary); margin-bottom: 2rem; text-align: center; font-weight: 700;">📚 Academic Timeline</h3>
     <div class="timeline">
         {{ range .Site.Params.timeline }}
         <div class="timeline-item">
@@ -91,9 +91,33 @@
 }
 
 .timeline-header h4 {
-    color: #ffffff;
+    color: var(--text-primary);
     margin: 0 0 0.3rem 0;
     font-weight: 700;
+}
+
+.timeline-type {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    font-weight: 600;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2px 8px;
+    border-radius: 10px;
+}
+
+.timeline-date {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.highlight-tag {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--text-primary);
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 500;
 }
 
 .timeline-type {

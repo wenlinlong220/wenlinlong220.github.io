@@ -60,14 +60,7 @@ title = "Wen Linlong - Robotics Engineering | Reinforcement Learning | Motion Co
     tags = ["Ubuntu", "Eight-neighborhood Algorithm", "PID Control", "YOLO", "SSH/VNC"]
     project_url = "/projects/smart-car/"
 
-  [[params.portfolio]]
-    title = "National Undergraduate Mathematics Competition"
-    type = "Academic Competition"
-    icon = "📐"
-    image = "/images/portfolio/math-competition.jpg"
-    description = "Provincial First Prize in Chongqing Division, demonstrating mathematical modeling and problem-solving abilities"
-    tags = ["Mathematical Modeling", "Algorithm Design", "Problem Solving"]
-    project_url = "/projects/math-competition/"
+
 
   # Academic Timeline
   [[params.timeline]]
