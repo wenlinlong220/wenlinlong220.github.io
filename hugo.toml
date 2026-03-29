@@ -1,6 +1,5 @@
 baseURL = "https://wenlinlong220.github.io/"
 defaultContentLanguage = "zh"
-theme = "nomad-tech"
 
 [pagination]
   pagerSize = 6
