@@ -1,5 +1,4 @@
 baseURL = "https://wenlinlong220.github.io/"
-defaultContentLanguage = "zh"
 
 [pagination]
   pagerSize = 6
@@ -8,19 +7,8 @@ defaultContentLanguage = "zh"
   category = "categories"
   tag = "tags"
 
-[languages]
-  [languages.zh]
-    languageCode = "zh-CN"
-    title = "Wen Linlong - Robotics Engineering | RL | Motion Control"
-    weight = 1
-  [languages.en]
-    languageCode = "en-US"
-    title = "Wen Linlong - Robotics Engineering | Reinforcement Learning | Motion Control"
-    weight = 2
-  [languages.fr]
-    languageCode = "fr-FR"
-    title = "Wen Linlong - Ingénierie Robotique | Apprentissage par Renforcement | Contrôle de Mouvement"
-    weight = 3
+languageCode = "en-US"
+title = "Wen Linlong - Robotics Engineering | Reinforcement Learning | Motion Control"
 
 [params]
   author = "Wen Linlong"
