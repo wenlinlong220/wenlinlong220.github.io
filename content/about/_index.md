@@ -21,16 +21,16 @@ Hello, I'm **Wen Linlong** - an undergraduate student in Robotics Engineering at
 - **Robot Motion Control**: PID control, kinematic inverse solution, 3D trajectory tracking
 - **Reinforcement Learning Simulation**: Mujoco, Isaac Lab platform applications
 
-## Core Course Performance
+## Core Courses
 
-- Advanced Mathematics: 99
-- Control Theory Fundamentals: 99
-- Robotics: 95
-- Linear Algebra: 96
-- Mechanical Principles: 94
-- Mechanical Design: 95
-- Autonomous Navigation and Positioning Technology: 95
-- Engineering Mechanics: 97
+- Advanced Mathematics
+- Control Theory Fundamentals
+- Robotics
+- Linear Algebra
+- Mechanical Principles
+- Mechanical Design
+- Autonomous Navigation and Positioning Technology
+- Engineering Mechanics
 
 ## Research Experience
 
