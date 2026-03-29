@@ -28,6 +28,11 @@ defaultContentLanguage = "zh"
   subtitle = "机器人工程 • 强化学习 • 运动控制"
   description = "重庆大学机器人工程专业本科生，GPA 3.88/4.0，专业排名 2/110，专注于基于RL的运动控制与无人机控制系统设计"
 
+  # GitHub Information
+  githubUsername = "wenlinlong220"
+  githubUserId = "wenlinlong220"
+  email = "wenlinlong@outlook.com"
+
   # Analytics (optional)
   googleAnalytics = "G-2310RJEC91"
 

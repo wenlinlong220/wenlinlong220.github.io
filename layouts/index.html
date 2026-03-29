@@ -1,12 +1,58 @@
 {{ define "main" }}
 <section class="hero">
-    <div class="hero-content">
-        <h1>{{ i18n "hero_greeting" }} {{ .Site.Params.author | default "m03315" }}</h1>
-        <p>{{ .Site.Params.subtitle | default "数字游民 • 科技探索者 • 生活记录者" }}</p>
-        <p>{{ .Site.Params.description | default "分享科技前沿见解，记录数字游民生活，提供实用攻略指南" }}</p>
-        <div class="cta-buttons">
-            <a href="{{ .Site.BaseURL }}social/" class="btn btn-primary">{{ i18n "follow_social" }}</a>
-            <a href="{{ .Site.BaseURL }}about/" class="btn btn-secondary">{{ i18n "learn_more" }}</a>
+    <div class="container">
+        <div class="hero-layout">
+            <!-- 左侧：GitHub头像 -->
+            <div class="hero-left">
+                <div class="avatar-container">
+                    <div class="avatar-fallback">W</div>
+                    <img src="https://avatars.githubusercontent.com/{{ .Site.Params.githubUsername | default "wenlinlong220" }}?v=4" alt="{{ .Site.Params.author }} GitHub头像" class="github-avatar">
+                    <div class="avatar-badge">
+                        <a href="https://github.com/{{ .Site.Params.githubUsername | default "wenlinlong220" }}" target="_blank" class="github-link">
+                            <span class="github-icon">🐙</span>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 右侧：个人信息 -->
+            <div class="hero-right">
+                <div class="personal-info">
+                    <h1>{{ .Site.Params.author | default "温麟陇" }}</h1>
+                    <p class="subtitle">{{ .Site.Params.subtitle | default "机器人工程 • 强化学习 • 运动控制" }}</p>
+                    <p class="description">{{ .Site.Params.description | default "重庆大学机器人工程专业本科生，GPA 3.88/4.0，专业排名 2/110，专注于基于RL的运动控制与无人机控制系统设计" }}</p>
+                    
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <span class="info-icon">🎓</span>
+                            <span class="info-label">学校：</span>
+                            <span class="info-value">重庆大学</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icon">⚙️</span>
+                            <span class="info-label">专业：</span>
+                            <span class="info-value">机器人工程</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icon">📊</span>
+                            <span class="info-label">GPA：</span>
+                            <span class="info-value">3.88/4.0</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icon">🏆</span>
+                            <span class="info-label">排名：</span>
+                            <span class="info-value">2/110</span>
+                        </div>
+                    </div>
+
+                    <div class="cta-buttons">
+                        <a href="{{ .Site.BaseURL }}about/" class="btn btn-primary">查看简历</a>
+                        <a href="{{ .Site.BaseURL }}portfolio/" class="btn btn-secondary">项目展示</a>
+                        <a href="mailto:{{ .Site.Params.email | default "wenlinlong@outlook.com" }}" class="btn btn-secondary">联系我</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
