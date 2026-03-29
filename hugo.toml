@@ -23,84 +23,126 @@ defaultContentLanguage = "zh"
     weight = 3
 
 [params]
-  author = "Winner"
-  logo = "My Personal Homepage"
-  subtitle = "Robot • Control • Mathematics"
-  description = "Welcome to discuss topic in the field of robotics with me"
+  author = "温麟陇"
+  logo = "温麟陇的个人主页"
+  subtitle = "机器人工程 • 强化学习 • 运动控制"
+  description = "重庆大学机器人工程专业本科生，GPA 3.88/4.0，专业排名 2/110，专注于基于RL的运动控制与无人机控制系统设计"
 
   # Analytics (optional)
   googleAnalytics = "G-2310RJEC91"
 
   # Social Media Links
   [[params.social]]
-    name = "YouTube"
-    class = "youtube"
-    icon = "📺"
-    description = "Tech reviews and nomad vlogs"
-    url = "https://www.youtube.com/@GP_ARC"
-    button_text = "Visit Channel"
+    name = "GitHub"
+    class = "github"
+    icon = "🐙"
+    description = "开源项目与代码仓库"
+    url = "https://github.com/wenlinlong220"
+    button_text = "查看项目"
 
   [[params.social]]
-    name = "Twitter"
-    class = "wechat"
-    icon = "🐦"
-    description = "Tech thoughts and daily updates"
-    url = "https://x.com/m03315_"
-    button_text = "Follow Me"
+    name = "LinkedIn"
+    class = "linkedin"
+    icon = "💼"
+    description = "专业简历与工作经历"
+    url = "https://linkedin.com/in/wenlinlong"
+    button_text = "查看简历"
 
   # Portfolio Items
   [[params.portfolio]]
-    title = "Digital Nomad Community App"
-    type = "Mobile Application"
-    icon = "📱"
-    description = "A comprehensive platform for nomads to connect and collaborate"
-    tags = ["React Native", "Node.js", "MongoDB"]
-    project_url = "/projects/nomad-app/"
+    title = "6-DOF 水下抓取机器人研发"
+    type = "科研项目"
+    icon = "🤖"
+    description = "基于ROS2和Mujoco/Isaac Lab平台的PID与PPO运动控制系统设计，实现高鲁棒性的三维轨迹跟踪"
+    tags = ["ROS2", "Mujoco", "Isaac Lab", "PPO算法", "PID控制"]
+    project_url = "/projects/underwater-robot/"
 
   [[params.portfolio]]
-    title = "Another Project"
-    type = "Web Application"
-    icon = "🌐"
-    description = "Web application description"
-    tags = ["React", "Vue.js"]
+    title = "全国大学生智能汽车竞赛"
+    type = "竞赛项目"
+    icon = "🏎️"
+    description = "国家级一等奖，负责视觉巡线算法、运动控制系统搭建与YOLO目标检测模型部署"
+    tags = ["Ubuntu", "八邻域算法", "PID控制", "YOLO", "SSH/VNC"]
+    project_url = "/projects/smart-car/"
 
-  # Travel Timeline
-  [[params.travels]]
-    city = "Bangkok"
-    country = "Thailand"
-    flag = "🇹🇭"
-    period = "2024.01 - 2024.03"
-    description = "Started my nomad journey in the vibrant capital of Thailand"
-    highlights = ["Co-working spaces", "Street food", "Tech meetups"]
+  [[params.portfolio]]
+    title = "全国大学生数学竞赛"
+    type = "学术竞赛"
+    icon = "📐"
+    description = "重庆赛区省级一等奖，展示数学建模与问题解决能力"
+    tags = ["数学建模", "算法设计", "问题求解"]
+    project_url = "/projects/math-competition/"
 
-  [[params.travels]]
-    city = "Chiang Mai"
-    country = "Thailand"
-    flag = "🇹🇭"
-    period = "2024.04 - 2024.06"
-    description = "Digital nomad hub with amazing community and low cost of living"
-    highlights = ["Nomad Summit", "Temples", "Mountain views"]
+  # Academic Timeline
+  [[params.timeline]]
+    title = "国家奖学金"
+    type = "荣誉奖项"
+    icon = "🏆"
+    period = "2024年 & 2025年"
+    description = "连续两年获得国家奖学金，表彰在学术研究方面的卓越表现"
+    highlights = ["学术卓越", "综合排名前列", "科研能力突出"]
 
-  [[params.travels]]
-    city = "Bali"
-    country = "Indonesia"
-    flag = "🇮🇩"
-    period = "2024.07 - Present"
-    description = "Current base with perfect blend of work and surf lifestyle"
-    highlights = ["Surfing", "Rice terraces", "Startup scene"]
+  [[params.timeline]]
+    title = "全国大学生智能汽车竞赛"
+    type = "竞赛成就"
+    icon = "🥇"
+    period = "2025年"
+    description = "获得国家级一等奖，负责视觉算法与运动控制系统"
+    highlights = ["国家级一等奖", "视觉巡线算法", "PID控制系统"]
+
+  [[params.timeline]]
+    title = "6-DOF水下机器人研发"
+    type = "科研项目"
+    icon = "🔬"
+    period = "2026.02 - 至今"
+    description = "基于强化学习的水下机器人运动控制研究，论文筹备中"
+    highlights = ["ROS2平台", "PPO算法", "运动学反解", "三维轨迹跟踪"]
+
+  [[params.timeline]]
+    title = "课程助教"
+    type = "教学经历"
+    icon = "👨‍🏫"
+    period = "2025-2026学年"
+    description = "担任《控制理论基础》与《机械制图》课程助教，获优秀助教荣誉"
+    highlights = ["优秀助教", "朋辈辅导", "学习方法分享"]
 
   # Contact Information
   [[params.contact]]
     icon = "📧"
-    name = "email"
-    value = "me@m03315.top"
+    name = "邮箱"
+    value = "wenlinlong@outlook.com"
   
   [[params.contact]]
-    icon = "💬"
-    name = "wechat"
-    value = "m03315_"
+    icon = "📱"
+    name = "电话"
+    value = "15808090387"
   
   [[params.contact]]
-    icon = "🐦"
-    name = "twitter"
-    value = "@m03315_"
+    icon = "🎓"
+    name = "学校"
+    value = "重庆大学"
+  
+  [[params.contact]]
+    icon = "⚙️"
+    name = "专业"
+    value = "机器人工程（智能与机器人方向）"
+  
+  [[params.contact]]
+    icon = "📊"
+    name = "GPA"
+    value = "3.88/4.0"
+  
+  [[params.contact]]
+    icon = "🏆"
+    name = "专业排名"
+    value = "2/110"
+  
+  [[params.contact]]
+    icon = "🏛️"
+    name = "学院"
+    value = "机械与运载工程学院"
+  
+  [[params.contact]]
+    icon = "🎯"
+    name = "研究方向"
+    value = "基于RL的运动控制，无人机控制系统设计"
