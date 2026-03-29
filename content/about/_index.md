@@ -1,82 +1,80 @@
 ---
-title: "关于我"
-description: "重庆大学机器人工程专业本科生，GPA 3.88/4.0，专业排名 2/110，专注于基于RL的运动控制与无人机控制系统设计"
+title: "About Me"
+description: "Undergraduate student in Robotics Engineering at Chongqing University, focusing on RL-based motion control and UAV system design"
 ---
 
-# 关于我
+# About Me
 
-你好，我是**温麟陇** - 重庆大学机械与运载工程学院机器人工程（智能与机器人方向）专业的本科生。
+Hello, I'm **Wen Linlong** - an undergraduate student in Robotics Engineering at the School of Mechanical and Vehicle Engineering, Chongqing University.
 
-## 教育背景
+## Education
 
-- **学校**：重庆大学
-- **学院**：机械与运载工程学院  
-- **专业**：机器人工程（智能与机器人方向）
-- **GPA**：3.88/4.0
-- **专业排名**：2/110
-- **英语水平**：CET-4 483分
+- **University**: Chongqing University
+- **College**: School of Mechanical and Vehicle Engineering  
+- **Major**: Robotics Engineering (Intelligence and Robotics方向)
+- **English Proficiency**: CET-4 483
 
-## 研究方向
+## Research Interests
 
-- **基于RL的运动控制**：PPO算法、奖励函数设计、运动策略网络
-- **无人机控制系统设计**：飞行控制算法、系统集成、鲁棒性优化
-- **机器人运动控制**：PID控制、运动学反解、三维轨迹跟踪
-- **强化学习仿真**：Mujoco、Isaac Lab平台应用
+- **RL-based Motion Control**: PPO algorithms, reward function design, motion policy networks
+- **UAV Control System Design**: Flight control algorithms, system integration, robustness optimization
+- **Robot Motion Control**: PID control, kinematic inverse solution, 3D trajectory tracking
+- **Reinforcement Learning Simulation**: Mujoco, Isaac Lab platform applications
 
-## 核心课程成绩
+## Core Course Performance
 
-- 高等数学：99
-- 控制理论基础：99
-- 机器人学：95
-- 线性代数：96
-- 机械原理：94
-- 机械设计：95
-- 自主导航与定位技术：95
-- 工程力学：97
+- Advanced Mathematics: 99
+- Control Theory Fundamentals: 99
+- Robotics: 95
+- Linear Algebra: 96
+- Mechanical Principles: 94
+- Mechanical Design: 95
+- Autonomous Navigation and Positioning Technology: 95
+- Engineering Mechanics: 97
 
-## 科研经历
+## Research Experience
 
-### 6-DOF 水下抓取机器人研发 (2026.2 - 至今)
+### 6-DOF Underwater Grasping Robot Development (Feb 2026 - Present)
 
-**PID 控制系统设计**：
-- 基于 ROS2 在 Mujoco 仿真平台完成 PID 控制系统设计
-- 针对机器人独特的"2舵机+4推进器"可倾斜对桨耦合系统，进行解析反解求取
-- 设计运动学反解求解器，能够较好完成低误差的三维曲线跟踪
+**PID Control System Design**:
+- Completed PID control system design based on ROS2 in Mujoco simulation platform
+- Conducted analytical inverse solution for the robot's unique "2 servo + 4 propeller" tiltable paddle coupling system
+- Designed kinematic inverse solution solver capable of low-error 3D curve tracking
 
-**基于 PPO 的运动控制系统设计**：
-- 基于 Isaac Lab 平台，采用 PPO 算法并合理设置机器人运动奖励函数
-- 实现从控制目标到机体坐标系下广义力的控制
-- 结合运动学反解器求解舵机角度与推进器推力，实现高鲁棒性的运动控制
-- 相关论文正在筹备中...
+**PPO-based Motion Control System Design**:
+- Used PPO algorithm on Isaac Lab platform with properly designed robot motion reward functions
+- Implemented control from target to generalized forces in body coordinate system
+- Combined with kinematic inverse solver to calculate servo angles and propeller thrust for highly robust motion control
+- Related paper in preparation...
 
-## 竞赛经历
+## Competition Experience
 
-### 全国大学生智能汽车竞赛（完全模型组） - 国家级一等奖
+### National Undergraduate Intelligent Car Competition (Complete Model Group) - National First Prize
 
-- **视觉与上位运动控制系统搭建**：在 Ubuntu18.04 下利用八邻域算法对赛道实时巡线，设计高适应性的拐弯算法，并对锥桶、行人、路障等特殊元素进行避障处理，并针对临时停车区以及十字路口进行识别并实时改变运动策略，能够以较高的鲁棒性完成比赛任务。
-- **底层运动控制搭建**：针对底盘后轮驱动电机进行 PID 算法设计与调试。
-- **系统集成**：通过远程 SSH 及 VNC 实现对上位机的远程控制与调试；部署 YOLO 模型识别赛道上特殊元素。
+- **Vision and Upper-level Motion Control System**: Real-time track following using eight-neighborhood algorithm on Ubuntu18.04, designed highly adaptive turning algorithms, obstacle avoidance for cones, pedestrians, and roadblocks, identification and real-time strategy adjustment for temporary parking areas and intersections
+- **Lower-level Motion Control**: PID algorithm design and debugging for rear-wheel drive motors
+- **System Integration**: Remote control and debugging via SSH and VNC; deployed YOLO model for special element recognition on track
 
-### 全国大学生数学竞赛（重庆赛区） - 省级一等奖
+### National Undergraduate Mathematics Competition (Chongqing Division) - Provincial First Prize
 
-## 学生工作与荣誉
+## Student Work and Honors
 
-- **班级班长**：认真负责为班集体服务，组织各项班级活动。
-- **课程助教**：担任《控制理论基础》与《机械制图》助教，获 2025-2026 第一学期优秀助教荣誉；多次参与朋辈辅导，分享工科数学学习方法。
-- **荣誉**：获 2024 年及 2025 年国家奖学金；重庆大学优异生。
+- **Class Monitor**: Responsible for class services and organizing various class activities
+- **Teaching Assistant**: Served as TA for "Control Theory Fundamentals" and "Mechanical Drawing", awarded Excellent Teaching Assistant honor in 2025-2026 first semester; participated in peer tutoring, sharing engineering mathematics learning methods
+- **Honors**: National Scholarship (2024 & 2025); Chongqing University Outstanding Student
 
-## 专业技能
+## Technical Skills
 
 ```bash
 $ whoami
-温麟陇
+Wen Linlong
 
 $ cat skills.json
 {
-  "编程语言": ["C++", "Python", "MATLAB"],
-  "仿真平台": ["Mujoco", "Isaac Lab", "ROS2"],
-  "开发工具": ["STM32", "SolidWorks", "Keil"],
-  "算法能力": ["PID控制", "PPO算法", "运动学反解", "YOLO目标检测"],
-  "研究方向": ["基于RL的运动控制", "无人机控制系统", "机器人运动控制"]
+  "Programming Languages": ["C++", "Python", "MATLAB"],
+  "Simulation Platforms": ["Mujoco", "Isaac Lab", "ROS2"],
+  "Development Tools": ["STM32", "SolidWorks", "Keil"],
+  "Algorithm Skills": ["PID Control", "PPO Algorithm", "Kinematic Inverse Solution", "YOLO Object Detection"],
+  "Research Areas": ["RL-based Motion Control", "UAV Control Systems", "Robot Motion Control"]
 }
 ```

@@ -23,10 +23,10 @@ defaultContentLanguage = "zh"
     weight = 3
 
 [params]
-  author = "温麟陇"
-  logo = "温麟陇的个人主页"
-  subtitle = "机器人工程 • 强化学习 • 运动控制"
-  description = "重庆大学机器人工程专业本科生，GPA 3.88/4.0，专业排名 2/110，专注于基于RL的运动控制与无人机控制系统设计"
+  author = "Wen Linlong"
+  logo = "Wen Linlong"
+  subtitle = "Robotics Engineering • Reinforcement Learning • Motion Control"
+  description = "Undergraduate student in Robotics Engineering at Chongqing University, focusing on RL-based motion control and UAV system design"
 
   # GitHub Information
   githubUsername = "wenlinlong220"
@@ -114,40 +114,30 @@ defaultContentLanguage = "zh"
   # Contact Information
   [[params.contact]]
     icon = "📧"
-    name = "邮箱"
+    name = "Email"
     value = "wenlinlong@outlook.com"
   
   [[params.contact]]
     icon = "📱"
-    name = "电话"
-    value = "15808090387"
+    name = "Phone"
+    value = "+86 15808090387"
   
   [[params.contact]]
     icon = "🎓"
-    name = "学校"
-    value = "重庆大学"
+    name = "University"
+    value = "Chongqing University"
   
   [[params.contact]]
     icon = "⚙️"
-    name = "专业"
-    value = "机器人工程（智能与机器人方向）"
-  
-  [[params.contact]]
-    icon = "📊"
-    name = "GPA"
-    value = "3.88/4.0"
-  
-  [[params.contact]]
-    icon = "🏆"
-    name = "专业排名"
-    value = "2/110"
+    name = "Major"
+    value = "Robotics Engineering"
   
   [[params.contact]]
     icon = "🏛️"
-    name = "学院"
-    value = "机械与运载工程学院"
+    name = "College"
+    value = "School of Mechanical and Vehicle Engineering"
   
   [[params.contact]]
     icon = "🎯"
-    name = "研究方向"
-    value = "基于RL的运动控制，无人机控制系统设计"
+    name = "Research"
+    value = "RL-based Motion Control, UAV System Design"
