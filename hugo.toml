@@ -23,10 +23,10 @@ defaultContentLanguage = "zh"
     weight = 3
 
 [params]
-  author = "LinlongWen"
+  author = "Winner"
   logo = "My Personal Homepage"
   subtitle = "Robot • Control • Mathematics"
-  description = "Sharing tech insights, recording nomad life, providing practical guides"
+  description = "Welcome to discuss topic in the field of robotics with me"
 
   # Analytics (optional)
   googleAnalytics = "G-2310RJEC91"
