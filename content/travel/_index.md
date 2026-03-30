@@ -4,4 +4,4 @@ description: "我的获奖情况"
 layout: "Timeline"
 ---
 
-在此展示沉淀中的我
+在此记录沉淀中的我
