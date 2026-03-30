@@ -449,7 +449,7 @@ section {
 }
 
 .portfolio-image {
-  height: 200px;
+  aspect-ratio: 5/2; /* 固定5:2比例 */
   background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
   display: flex;
   align-items: center;
