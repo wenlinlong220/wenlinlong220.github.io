@@ -6,6 +6,10 @@ icon: "🤖"
 duration: "Feb 2026 - Present"
 status: "active"
 tech_stack: ["ROS2", "Mujoco", "Isaac Lab", "PPO Algorithm", "PID Control"]
+links:
+  - name: "运动学正反解资料"
+    icon: "📄"
+    url: "/projects/underwater-robot/运动学正反解.pdf"
 ---
 
 # 6-DOF Underwater Grasping Robot Development
@@ -25,6 +29,10 @@ tech_stack: ["ROS2", "Mujoco", "Isaac Lab", "PPO Algorithm", "PID Control"]
 - 在Isaac Lab平台上使用PPO算法，配合合理设计的机器人运动奖励函数
 - 实现从目标到体坐标系下广义力的控制
 - 结合运动学逆解求解器计算舵机角度和螺旋桨推力，实现高鲁棒性运动控制
+
+## 相关资料
+
+[运动学正反解.pdf](/projects/underwater-robot/运动学正反解.pdf) - 机器人运动学正反解技术文档
 
 ## 研究进展
 
