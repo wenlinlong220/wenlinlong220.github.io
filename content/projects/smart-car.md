@@ -20,8 +20,7 @@ links:
 项目需要参赛者设计自己的车模外壳，运用官方提供的I车模的结构搭建自己的车模。
 整车分为上位机和下位机，上位机采用Edgeboard，下位机采用TC264，另外采用百度提供的框架进行YOLO模型的训练以识别路径上的特殊元素和路段。车模需要在形式的过程中行驶过急转弯、S弯、环岛和十字路口等复杂路段，除此之外，还需要避让路上的行人和路障，并在临时停车区、充电区以及餐饮区完成相应的任务，并且最终能够到达终点。本人在项目中最主要负责的部分是上位机视觉代码的内容，在技术实现中有具体解释，除此之外也涉及其他的部分内容。
 
-https://blog.csdn.net/zhuoqingjoking97298/article/details/143958024?sharetype=blog&shareId=143958024&sharerefer=APP&sharesource=2301_79539863&sharefrom=link 
--第20届全国大学生智能汽车竞赛完全模型组规则
+[第20届全国大学生智能汽车竞赛完全模型组规则](https://blog.csdn.net/zhuoqingjoking97298/article/details/143958024)
 
 ## 技术实现
 
