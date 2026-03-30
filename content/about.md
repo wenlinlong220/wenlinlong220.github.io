@@ -1,6 +1,6 @@
 ---
 title: "About Me"
-description: "重庆大学机器人工程专业本科生 - 专注于强化学习运动控制和无人机系统设计"
+description: "Chongqing University Robotics Engineering Student - Focus on RL Motion Control and UAV Systems"
 ---
 
 # About Me
@@ -11,7 +11,7 @@ Hello, I'm Wen Linlong - an undergraduate student in Robotics Engineering at the
 
 **University**: Chongqing University  
 **College**: School of Mechanical and Vehicle Engineering  
-**Major**: Robotics Engineering (Intelligence and Robotics方向)
+**Major**: Robotics Engineering (Intelligence and Robotics Track)
 
 ## Research Interests
 
@@ -72,9 +72,9 @@ Hello, I'm Wen Linlong - an undergraduate student in Robotics Engineering at the
 
 ## Contact
 
-📧 **Email**: wenlinlong@outlook.com  
-📱 **Phone**: +86 15808090387  
-🎓 **University**: Chongqing University  
-⚙️ **Major**: Robotics Engineering  
-🏛️ **College**: School of Mechanical and Vehicle Engineering  
-🎯 **Research**: RL-based Motion Control, UAV System Design
+**Email**: wenlinlong@outlook.com  
+**Phone**: +86 15808090387  
+**University**: Chongqing University  
+**Major**: Robotics Engineering  
+**College**: School of Mechanical and Vehicle Engineering  
+**Research**: RL-based Motion Control, UAV System Design

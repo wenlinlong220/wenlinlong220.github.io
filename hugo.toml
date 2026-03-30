@@ -8,7 +8,7 @@ baseURL = "https://wenlinlong220.github.io/"
   tag = "tags"
 
 languageCode = "en-US"
-title = "Wen Linlong - Robotics Engineering | Reinforcement Learning | Motion Control"
+title = "Wen Linlong - Robotics | Control | Mathematics"
 
 [params]
   author = "Wen Linlong"
@@ -119,9 +119,9 @@ title = "Wen Linlong - Robotics Engineering | Reinforcement Learning | Motion Co
   [[params.contact]]
     icon = "🏛️"
     name = "College"
-    value = "School of Mechanical and Vehicle Engineering"
+    value = "Mechanical and Vehicle Engineering"
   
   [[params.contact]]
     icon = "🎯"
-    name = "Research"
-    value = "RL-based Motion Control, UAV System Design"
+    name = "Interest Research"
+    value = "RL-based Motion Control, Smart Control System Design"
