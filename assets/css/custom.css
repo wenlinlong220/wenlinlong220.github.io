@@ -12,3 +12,47 @@
 .content li:last-child {
   margin-bottom: 0;
 }
+
+/* 改进链接颜色以提高对比度 */
+.content a {
+  color: #4dc3ff; /* 更亮的蓝色，提高对比度 */
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid rgba(77, 195, 255, 0.3);
+  padding-bottom: 1px;
+}
+
+.content a:hover {
+  color: #80d4ff; /* 悬停时更亮 */
+  border-bottom-color: #80d4ff;
+  text-decoration: none;
+}
+
+.content a:focus {
+  outline: 2px solid #4dc3ff;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* PDF链接特殊样式 */
+.content a[href$=".pdf"] {
+  color: #9d50bb; /* 紫色，区分PDF链接 */
+  border-bottom-color: rgba(157, 80, 187, 0.3);
+}
+
+.content a[href$=".pdf"]:hover {
+  color: #c27fe0; /* 悬停时更亮的紫色 */
+  border-bottom-color: #c27fe0;
+}
+
+.content a[href$=".pdf"]:focus {
+  outline-color: #9d50bb;
+}
+
+/* 链接后的文本样式 */
+.content a + span {
+  color: #888;
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+  font-style: italic;
+}
