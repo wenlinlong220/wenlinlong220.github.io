@@ -13,7 +13,7 @@ title = "Wen Linlong - Robotics Engineering | Reinforcement Learning | Motion Co
 [params]
   author = "Wen Linlong"
   logo = "Wen Linlong"
-  subtitle = "Robotics Engineering • Reinforcement Learning • Motion Control"
+  subtitle = "Robotics • Control • Mathematics"
   description = "Undergraduate student in Robotics Engineering at Chongqing University, focusing on RL-based motion control and UAV system design"
   
   # GitHub Information
@@ -34,8 +34,8 @@ title = "Wen Linlong - Robotics Engineering | Reinforcement Learning | Motion Co
     button_text = "View Projects"
 
   [[params.social]]
-    name = "LinkedIn"
-    class = "linkedin"
+    name = "BiliBili"
+    class = "bilibili"
     icon = "💼"
     description = "Professional resume and work experience"
     url = "https://linkedin.com/in/wenlinlong"
