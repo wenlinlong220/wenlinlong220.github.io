@@ -2,6 +2,12 @@
 {{ $css := $scss | css.Sass | resources.Minify | resources.Fingerprint }}
 <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
 
+{{ $customCSS := resources.Get "css/custom.css" }}
+{{ if $customCSS }}
+{{ $customCSSMin := $customCSS | resources.Minify | resources.Fingerprint }}
+<link rel="stylesheet" href="{{ $customCSSMin.RelPermalink }}" integrity="{{ $customCSSMin.Data.Integrity }}">
+{{ end }}
+
 {{ $js := resources.Get "js/main.js" }}
 {{ $jsMin := $js | resources.Minify | resources.Fingerprint }}
 <script src="{{ $jsMin.RelPermalink }}" integrity="{{ $jsMin.Data.Integrity }}" defer></script>

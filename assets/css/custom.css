@@ -1,0 +1,14 @@
+/* 自定义样式修复列表缩进问题 */
+.content ul,
+.content ol {
+  margin: 1rem 0;
+  padding-left: 2rem;
+}
+
+.content li {
+  margin-bottom: 0.5rem;
+}
+
+.content li:last-child {
+  margin-bottom: 0;
+}
