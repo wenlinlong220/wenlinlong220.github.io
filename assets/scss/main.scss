@@ -39,7 +39,7 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(26, 26, 46, 0.95);
+  background: var(--nav-bg, rgba(26, 26, 46, 0.95));
   backdrop-filter: blur(10px);
   z-index: 1000;
   padding: 1rem 0;

@@ -298,6 +298,7 @@ class NomadTheme {
       document.documentElement.style.setProperty('--text-secondary', '#666666');
       document.documentElement.style.setProperty('--glass-bg', 'rgba(0, 0, 0, 0.05)');
       document.documentElement.style.setProperty('--glass-border', 'rgba(0, 0, 0, 0.1)');
+      document.documentElement.style.setProperty('--nav-bg', 'rgba(255, 255, 255, 0.95)');
     } else {
       // Dark theme (default)
       document.documentElement.style.setProperty('--bg-primary', '#0a0a0a');
@@ -306,6 +307,7 @@ class NomadTheme {
       document.documentElement.style.setProperty('--text-secondary', '#888888');
       document.documentElement.style.setProperty('--glass-bg', 'rgba(255, 255, 255, 0.05)');
       document.documentElement.style.setProperty('--glass-border', 'rgba(255, 255, 255, 0.1)');
+      document.documentElement.style.setProperty('--nav-bg', 'rgba(26, 26, 46, 0.95)');
     }
   }
 
