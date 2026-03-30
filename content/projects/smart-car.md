@@ -10,6 +10,7 @@ links:
   - name: "比赛资料下载"
     icon: "📄"
     url: "/projects/smartcar/完全模型组部分讲解.pdf"
+layout: "smartcar"
 ---
 
 # 全国大学生智能汽车竞赛完全模型组
