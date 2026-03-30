@@ -6,10 +6,6 @@ icon: "🏎️"
 duration: "2025"
 status: "completed"
 tech_stack: ["Ubuntu", "Eight-neighborhood Algorithm", "PID Control", "YOLO", "SSH/VNC"]
-links:
-  - name: "比赛资料下载"
-    icon: "📄"
-    url: "/projects/smartcar/完全模型组部分讲解.pdf"
 layout: "smartcar"
 ---
 
