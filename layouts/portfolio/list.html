@@ -1,47 +1,391 @@
 {{ define "main" }}
-<div style="margin-top: 5rem; padding: 2rem;">
-    <div style="max-width: 1200px; margin: 0 auto;">
-        <div style="text-align: center; margin-bottom: 3rem;">
-            <h1 style="color: #00d4ff; font-size: 3rem; margin-bottom: 1rem;">{{ .Title }}</h1>
-            <p style="font-size: 1.2rem; opacity: 0.9;">{{ .Content }}</p>
-            
-            <!-- 视图切换按钮 -->
-            <div style="margin-top: 2rem; display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
-                <a href="/portfolio/marquee/" class="btn" style="background: rgba(0, 212, 255, 0.2); color: #00d4ff; border: 1px solid rgba(0, 212, 255, 0.3); padding: 10px 20px; border-radius: 20px; text-decoration: none; transition: all 0.3s ease;">
-                    <span>切换到跑马灯视图</span>
+<div class="portfolio-marquee-page">
+    <div class="portfolio-header">
+        <h1>{{ .Title }}</h1>
+        <p class="portfolio-subtitle">{{ .Content }}</p>
+    </div>
+
+    <!-- 跑马灯容器 -->
+    <div class="marquee-wrapper">
+        <div class="marquee-container">
+            <div class="marquee-track">
+                {{ range $index, $item := $.Site.Data.portfolio }}
+                <a href="{{ $item.url }}" class="project-card">
+                    <div class="project-image">
+                        <img src="{{ $item.image }}" alt="{{ $item.title }}" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <h3>{{ $item.title }}</h3>
+                        <p class="project-description">{{ $item.description }}</p>
+                        <div class="project-tags">
+                            {{ range $item.tags }}
+                            <span class="project-tag">{{ . }}</span>
+                            {{ end }}
+                        </div>
+                        <div class="project-link">
+                            <span>查看详情 →</span>
+                        </div>
+                    </div>
                 </a>
-                <a href="/" class="btn" style="background: rgba(157, 80, 187, 0.2); color: #9d50bb; border: 1px solid rgba(157, 80, 187, 0.3); padding: 10px 20px; border-radius: 20px; text-decoration: none; transition: all 0.3s ease;">
-                    <span>返回首页</span>
+                {{ end }}
+                
+                <!-- 重复一遍实现无缝循环 -->
+                {{ range $index, $item := $.Site.Data.portfolio }}
+                <a href="{{ $item.url }}" class="project-card">
+                    <div class="project-image">
+                        <img src="{{ $item.image }}" alt="{{ $item.title }}" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <h3>{{ $item.title }}</h3>
+                        <p class="project-description">{{ $item.description }}</p>
+                        <div class="project-tags">
+                            {{ range $item.tags }}
+                            <span class="project-tag">{{ . }}</span>
+                            {{ end }}
+                        </div>
+                        <div class="project-link">
+                            <span>查看详情 →</span>
+                        </div>
+                    </div>
                 </a>
+                {{ end }}
             </div>
         </div>
-        <div class="portfolio-grid">
-            {{ range .Site.Params.portfolio }}
-            <div class="portfolio-item">
-                <div class="portfolio-image">
-                    {{ if .image }}
-                    <img src="{{ .image }}" alt="{{ .title }}" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='{{ .icon }} {{ .type }}';">
-                    {{ else }}
-                    {{ .icon }} {{ .type }}
-                    {{ end }}
-                </div>
-                <div class="portfolio-content">
-                    <h3>{{ .title }}</h3>
-                    <p>{{ .description }}</p>
-                    <div style="margin-top: 1rem;">
-                        {{ range .tags }}
-                        <span style="background: rgba(0,212,255,0.2); padding: 4px 8px; border-radius: 15px; font-size: 0.8rem;">{{ . }}</span>
-                        {{ end }}
-                    </div>
-                    {{ if .project_url }}
-                    <div style="margin-top: 1rem;">
-                        <a href="{{ .project_url }}" class="btn btn-secondary">View Details</a>
-                    </div>
-                    {{ end }}
-                </div>
-            </div>
-            {{ end }}
+        
+        <!-- 跑马灯控制提示 -->
+        <div class="marquee-hint">
+            <span>鼠标悬停暂停 • 点击卡片查看详情</span>
         </div>
     </div>
+
+    <!-- 返回首页 -->
+    <div class="back-home">
+        <a href="/" class="back-btn">
+            <span>← 返回首页</span>
+        </a>
+    </div>
 </div>
+
+<style>
+.portfolio-marquee-page {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%);
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portfolio-header {
+    text-align: center;
+    margin-bottom: 4rem;
+    max-width: 800px;
+}
+
+.portfolio-header h1 {
+    color: #00d4ff;
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.portfolio-subtitle {
+    color: #ccc;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+/* 跑马灯包装器 */
+.marquee-wrapper {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* 跑马灯容器 */
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    padding: 3rem 0;
+    position: relative;
+}
+
+/* 渐变遮罩 - 确保文字不被遮挡 */
+.marquee-container::before,
+.marquee-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.marquee-container::before {
+    left: 0;
+    background: linear-gradient(to right, #0a0a0a, transparent);
+}
+
+.marquee-container::after {
+    right: 0;
+    background: linear-gradient(to left, #0a0a0a, transparent);
+}
+
+/* 跑马灯轨道 */
+.marquee-track {
+    display: flex;
+    gap: 2.5rem;
+    width: max-content;
+    animation: scrollMarquee 30s linear infinite;
+}
+
+/* 鼠标悬停暂停 */
+.marquee-container:hover .marquee-track {
+    animation-play-state: paused;
+}
+
+/* 跑马灯动画 */
+@keyframes scrollMarquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-50% - 1.25rem)); }
+}
+
+/* 项目卡片 */
+.project-card {
+    width: 380px;
+    height: 480px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background: rgba(26, 26, 46, 0.9);
+    border: 1px solid rgba(0, 212, 255, 0.2);
+    backdrop-filter: blur(10px);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.project-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    border-color: rgba(0, 212, 255, 0.5);
+    box-shadow: 0 20px 50px rgba(0, 212, 255, 0.2);
+    z-index: 10;
+}
+
+/* 项目图片 */
+.project-image {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    position: relative;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.05);
+}
+
+/* 项目内容 */
+.project-content {
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    background: rgba(10, 10, 10, 0.8);
+}
+
+.project-content h3 {
+    color: #00d4ff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 0 1rem 0;
+    line-height: 1.3;
+}
+
+.project-description {
+    color: #e0e0e0;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0 0 1.5rem 0;
+    flex: 1;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* 项目标签 */
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.project-tag {
+    background: rgba(0, 212, 255, 0.15);
+    color: #80d4ff;
+    padding: 0.4rem 0.8rem;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    border: 1px solid rgba(0, 212, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.project-card:hover .project-tag {
+    background: rgba(0, 212, 255, 0.25);
+    border-color: rgba(0, 212, 255, 0.4);
+}
+
+/* 项目链接 */
+.project-link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: #9d50bb;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.project-card:hover .project-link {
+    color: #c27fe0;
+    transform: translateX(5px);
+}
+
+/* 跑马灯提示 */
+.marquee-hint {
+    text-align: center;
+    margin-top: 2rem;
+    color: #888;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+/* 返回首页按钮 */
+.back-home {
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem 1.5rem;
+    background: rgba(0, 212, 255, 0.1);
+    color: #00d4ff;
+    text-decoration: none;
+    border-radius: 25px;
+    border: 1px solid rgba(0, 212, 255, 0.2);
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+.back-btn:hover {
+    background: rgba(0, 212, 255, 0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 212, 255, 0.1);
+}
+
+/* 轨道悬停效果 */
+.marquee-track:hover .project-card {
+    filter: blur(2px) brightness(0.9);
+    transform: scale(0.98);
+}
+
+.marquee-track .project-card:hover {
+    filter: blur(0) brightness(1);
+    transform: scale(1.05) translateY(-15px) !important;
+}
+
+/* 响应式设计 */
+@media (max-width: 1200px) {
+    .project-card {
+        width: 340px;
+        height: 440px;
+    }
+    
+    .project-image {
+        height: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .portfolio-marquee-page {
+        padding: 3rem 1rem;
+    }
+    
+    .portfolio-header h1 {
+        font-size: 2.2rem;
+    }
+    
+    .project-card {
+        width: 300px;
+        height: 400px;
+    }
+    
+    .project-image {
+        height: 180px;
+    }
+    
+    .project-content {
+        padding: 1.5rem;
+    }
+    
+    .project-content h3 {
+        font-size: 1.3rem;
+    }
+    
+    .marquee-container::before,
+    .marquee-container::after {
+        width: 100px;
+    }
+    
+    .marquee-track {
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .portfolio-header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .project-card {
+        width: 280px;
+        height: 380px;
+    }
+    
+    .project-image {
+        height: 160px;
+    }
+    
+    .project-content h3 {
+        font-size: 1.2rem;
+    }
+    
+    .project-description {
+        font-size: 0.95rem;
+    }
+    
+    .marquee-container::before,
+    .marquee-container::after {
+        width: 50px;
+    }
+}
+</style>
 {{ end }}
