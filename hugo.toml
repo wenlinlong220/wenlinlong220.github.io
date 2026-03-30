@@ -119,9 +119,9 @@ title = "Wen Linlong - Robotics | Control | Mathematics"
   [[params.contact]]
     icon = "🏛️"
     name = "College"
-    value = "Mechanical and Vehicle Engineering"
+    value = "School of Mechanical and Vehicle Engineering"
   
   [[params.contact]]
     icon = "🎯"
-    name = "Interest Research"
-    value = "RL-based Motion Control, Smart Control System Design"
+    name = "Research"
+    value = "RL-based Motion Control, UAV System Design"

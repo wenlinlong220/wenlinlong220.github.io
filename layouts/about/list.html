@@ -27,7 +27,7 @@
                     {{ range .Site.Params.contact }}
                     <div class="contact-file">
                         <span class="file-icon">{{ .icon }}</span>
-                        <span class="file-name">{{ .name | lower }}.txt</span>
+                        <span class="file-name">{{ .name }}</span>
                         <span class="file-content">{{ .value }}</span>
                     </div>
                     {{ end }}
