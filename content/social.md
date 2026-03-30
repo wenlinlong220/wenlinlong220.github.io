@@ -1,12 +1,12 @@
 ---
-title: "Social Media"
-description: "Connect with me across different platforms"
+title: "社区建设"
+description: "关于我的GitHub以及B站"
 ---
 
-# Follow My Journey
+# 社区建设
 
-Stay updated with my latest adventures, tech insights, and nomad life experiences across different social media platforms.
+在这里了解我的GitHub开源项目和B站技术分享。
 
-## Where to Find Me
+## 平台介绍
 
-Connect with me on various platforms where I share different aspects of my journey - from tech tutorials to travel vlogs and daily life updates.
+通过不同的平台分享我的技术学习和项目经验，与社区共同成长。

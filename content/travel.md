@@ -1,7 +1,7 @@
 ---
-title: "Travel Timeline"
-description: "My digital nomad journey around the world"
+title: "我的奖项"
+description: "在此展示我获得的主要奖项"
 layout: "travel"
 ---
 
-Follow my adventures as a digital nomad, exploring different cities and cultures while building amazing projects.
+在此展示我获得的主要奖项和荣誉成就。
