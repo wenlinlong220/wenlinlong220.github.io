@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Video Test</title>
+    <style>
+        body { margin: 0; padding: 0; background: #000; color: white; }
+        .test-container { 
+            position: relative; 
+            height: 100vh; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center; 
+        }
+        .video-test {
+            width: 80%;
+            max-width: 800px;
+            border: 2px solid #00d4ff;
+            margin: 20px 0;
+        }
+        .status {
+            padding: 10px;
+            background: rgba(0, 212, 255, 0.1);
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1>Video Playback Test</h1>
+        
+        <div class="status">
+            <p>Testing video file: /videos/smart-car-fixed.mp4</p>
+            <p>File size: 14MB</p>
+            <p>Format: MP4 H.264</p>
+        </div>
+        
+        <video class="video-test" controls autoplay muted loop playsinline preload="auto">
+            <source src="/videos/smart-car-fixed.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        
+        <div class="status">
+            <p>If video plays above, the file is accessible and playable.</p>
+            <p>If not, check browser console for errors.</p>
+        </div>
+        
+        <a href="/projects/smart-car/" style="color: #4dc3ff; margin-top: 20px;">Back to Smart Car Project Page</a>
+    </div>
+</body>
+</html>

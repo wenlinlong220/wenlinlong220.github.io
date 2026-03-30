@@ -1,61 +1,76 @@
-{{ define "main" }}
-<div class="smartcar-container">
-    <!-- 视频背景 -->
-    <div class="video-background">
-        <video autoplay muted loop playsinline preload="auto" poster="/videos/smart-car-poster.jpg" class="debug-video">
-            <source src="/videos/smart-car-fixed.mp4" type="video/mp4">
-            您的浏览器不支持视频标签。
-        </video>
-        <div class="video-overlay"></div>
-    </div>
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang | default "zh-CN" }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{ partial "seo.html" . }}
+    {{ partial "head.html" . }}
+    {{ if and (hugo.IsProduction) (.Site.Params.googleAnalytics) }}
+    {{ partial "analytics.html" . }}
+    {{ end }}
+</head>
+<body>
+    {{ partial "header.html" . }}
+    <main id="main" role="main">
+        <div class="smartcar-container">
+            <!-- 视频背景 -->
+            <div class="video-background">
+                <video autoplay muted loop playsinline preload="auto" poster="/videos/smart-car-poster.jpg" class="debug-video">
+                    <source src="/videos/smart-car-fixed.mp4" type="video/mp4">
+                    您的浏览器不支持视频标签。
+                </video>
+                <div class="video-overlay"></div>
+            </div>
 
-    <!-- 项目内容 -->
-    <article class="smartcar-content">
-        <div class="terminal-header">
-            <div class="terminal-buttons">
-                <span class="btn-close"></span>
-                <span class="btn-minimize"></span>
-                <span class="btn-maximize"></span>
-            </div>
-            <div class="terminal-title">{{ .Title }}.md</div>
-        </div>
-        
-        <div class="terminal-body">
-            <div class="prompt-line">
-                <span class="prompt">$</span>
-                <span class="command">cat {{ .Title | lower }}.md</span>
-            </div>
-            
-            <div class="content">
-                <h1>{{ .Title }}</h1>
+            <!-- 项目内容 -->
+            <article class="smartcar-content">
+                <div class="terminal-header">
+                    <div class="terminal-buttons">
+                        <span class="btn-close"></span>
+                        <span class="btn-minimize"></span>
+                        <span class="btn-maximize"></span>
+                    </div>
+                    <div class="terminal-title">{{ .Title }}.md</div>
+                </div>
                 
-                {{ if .Params.tech_stack }}
-                <div class="tech-stack">
-                    <h3>技术栈</h3>
-                    <div class="tech-tags">
-                        {{ range .Params.tech_stack }}
-                        <span class="tech-tag">{{ . }}</span>
+                <div class="terminal-body">
+                    <div class="prompt-line">
+                        <span class="prompt">$</span>
+                        <span class="command">cat {{ .Title | lower }}.md</span>
+                    </div>
+                    
+                    <div class="content">
+                        <h1>{{ .Title }}</h1>
+                        
+                        {{ if .Params.tech_stack }}
+                        <div class="tech-stack">
+                            <h3>技术栈</h3>
+                            <div class="tech-tags">
+                                {{ range .Params.tech_stack }}
+                                <span class="tech-tag">{{ . }}</span>
+                                {{ end }}
+                            </div>
+                        </div>
+                        {{ end }}
+                        
+                        {{ .Content }}
+                        
+                        {{ if .Params.links }}
+                        <div class="project-links">
+                            {{ range .Params.links }}
+                            <a href="{{ .url }}" class="project-link" target="_blank">
+                                <span>{{ .icon }}</span>
+                                {{ .name }}
+                            </a>
+                            {{ end }}
+                        </div>
                         {{ end }}
                     </div>
                 </div>
-                {{ end }}
-                
-                {{ .Content }}
-                
-                {{ if .Params.links }}
-                <div class="project-links">
-                    {{ range .Params.links }}
-                    <a href="{{ .url }}" class="project-link" target="_blank">
-                        <span>{{ .icon }}</span>
-                        {{ .name }}
-                    </a>
-                    {{ end }}
-                </div>
-                {{ end }}
-            </div>
+            </article>
         </div>
-    </article>
-</div>
+    </main>
+    {{ partial "footer.html" . }}
 
 <style>
 .smartcar-container {
@@ -376,4 +391,5 @@
     }
 }
 </style>
-{{ end }}
+</body>
+</html>

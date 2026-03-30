@@ -1,7 +1,7 @@
 - title: "6-DOF Underwater Robot"
   image: "/images/portfolio/underwater-robot.jpg"
   url: "/projects/underwater-robot/"
-  description: "基于ROS2和Mujoco/Isaac Lab平台的六自由度水下抓取机器人运动控制系统设计"
+  description: "基于ROS2和Mujoco/MJLab平台的六自由度水下抓取机器人运动控制系统设计"
   tags: ["ROS2", "Mujoco", "PPO算法", "PID控制"]
 
 - title: "智能车竞赛"

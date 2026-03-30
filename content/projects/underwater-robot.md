@@ -5,7 +5,7 @@ type: "Research Project"
 icon: "🤖"
 duration: "Feb 2026 - Present"
 status: "active"
-tech_stack: ["ROS2", "Mujoco", "Isaac Lab", "PPO Algorithm", "PID Control"]
+tech_stack: ["ROS2", "Mujoco", "MJLab", "PPO Algorithm", "PID Control"]
 links:
   - name: "运动学正反解资料"
     icon: "📄"
