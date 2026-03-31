@@ -29,9 +29,9 @@ title = "Wen Linlong - Robotics | Control | Mathematics"
     name = "GitHub"
     class = "github"
     icon = "🐙"
-    description = "Open source projects and code repositories"
+    description = "我的代码仓库"
     url = "https://github.com/wenlinlong220"
-    button_text = "View Projects"
+    button_text = "查看项目"
 
   [[params.social]]
     name = "BiliBili"
