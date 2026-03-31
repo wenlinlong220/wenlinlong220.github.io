@@ -13,10 +13,6 @@ description: "Undergraduate student in Robotics Engineering at Chongqing Univers
 - **学院**: 机械与运载工程学院  
 - **专业**: 机器人工程
 
-## 感兴趣的研究方向
-
-- **RL-based Motion Control**: 基于强化学习的机器人运动控制
-- **Smart Control System Design**: 关于机器人智能控制系统设计，期望设计针对无人机、水下机器人等前沿方向的机器人控制系统设计
 
 ## 核心课程
 
