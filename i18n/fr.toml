@@ -39,11 +39,11 @@ other = "Portfolio"
 [view_details]
 other = "Voir Détails"
 [posts_count]
-other = "articles"
+other = "blogs"
 [all_categories]
 other = "Toutes les Catégories"
 [view_posts]
-other = "Voir Articles"
+other = "Voir Blog"
 [contact_email]
 other = "email.txt"
 [contact_wechat]
