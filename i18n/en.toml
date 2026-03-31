@@ -3,13 +3,13 @@ other = "Home"
 [social]
 other = "Social Media"
 [blog]
-other = "Blog"
+other = "Learning Log"
 [portfolio]
 other = "Portfolio"
 [contact]
 other = "Contact"
 [latest_blog]
-other = "Latest Blog"
+other = "Latest Learning Log"
 [all_posts]
 other = "All"
 [read_more]
