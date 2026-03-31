@@ -7,9 +7,10 @@
   --bg-secondary: #1a1a2e;
   --text-primary: #ffffff;
   --text-secondary: #888;
-  --glass-bg: rgba(255, 255, 255, 0.05);
-  --glass-border: rgba(255, 255, 255, 0.1);
-  --transition: all 0.3s ease;
+   --glass-bg: rgba(255, 255, 255, 0.05);
+   --glass-border: rgba(255, 255, 255, 0.1);
+   --nav-bg: rgba(26, 26, 46, 0.95);
+   --transition: all 0.3s ease;
 }
 
 // Base styles
@@ -618,7 +619,7 @@ section {
   }
 
   .avatar-container {
-    width: 240px
+    width: 240px;
     height: 240px;
   }
 
