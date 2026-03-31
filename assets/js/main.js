@@ -622,3 +622,52 @@ function showSection(sectionId) {
 function filterPosts(category) {
   window.nomadTheme?.filterPosts(category);
 }
+
+// 打字机效果
+function initTypewriter() {
+  const subtitleEl = document.querySelector('.subtitle');
+  if (!subtitleEl) return;
+  
+  const originalText = subtitleEl.textContent.trim();
+  const text = originalText;
+  
+  // 清空内容
+  subtitleEl.textContent = '';
+  subtitleEl.classList.add('typewriter-container');
+  
+  // 创建打字机文本元素
+  const typewriterText = document.createElement('span');
+  typewriterText.className = 'typewriter-text';
+  subtitleEl.appendChild(typewriterText);
+  
+  // 创建光标元素
+  const cursor = document.createElement('span');
+  cursor.className = 'typewriter-cursor';
+  cursor.textContent = '|';
+  subtitleEl.appendChild(cursor);
+  
+  let charIndex = 0;
+  const typingSpeed = 80; // 毫秒每字符
+  const pauseBetweenWords = 300; // 单词间暂停
+  
+  function typeCharacter() {
+    if (charIndex < text.length) {
+      const char = text.charAt(charIndex);
+      typewriterText.textContent += char;
+      charIndex++;
+      
+      // 如果是分隔符（•），增加暂停时间
+      const delay = char === '•' ? pauseBetweenWords : typingSpeed;
+      setTimeout(typeCharacter, delay);
+    } else {
+      // 打字完成，开始光标闪烁
+      cursor.style.animation = 'blink 1s infinite';
+    }
+  }
+  
+  // 开始打字
+  setTimeout(typeCharacter, 500); // 初始延迟
+}
+
+// 初始化打字机效果
+document.addEventListener('DOMContentLoaded', initTypewriter);
