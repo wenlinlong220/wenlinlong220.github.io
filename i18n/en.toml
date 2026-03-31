@@ -43,7 +43,7 @@ other = "posts"
 [all_categories]
 other = "All Categories"
 [view_posts]
-other = "View Posts"
+other = "View Blog"
 [contact_email]
 other = "email.txt"
 [contact_wechat]

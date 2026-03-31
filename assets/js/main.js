@@ -520,7 +520,7 @@ class NomadTheme {
     const results = [
       { title: 'About Me', url: '/about/', type: 'Page' },
       { title: 'Portfolio Projects', url: '/portfolio/', type: 'Page' },
-      { title: 'Blog Posts', url: '/posts/', type: 'Page' },
+      { title: 'Blog', url: '/posts/', type: 'Page' },
       { title: 'Academic Timeline', url: '/travel/', type: 'Page' },
       { title: 'Social Media', url: '/social/', type: 'Page' }
     ];

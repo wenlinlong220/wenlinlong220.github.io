@@ -39,11 +39,11 @@ other = "作品展示"
 [view_details]
 other = "查看详情"
 [posts_count]
-other = "篇文章"
+other = "篇博客"
 [all_categories]
 other = "所有分类"
 [view_posts]
-other = "查看文章"
+other = "查看博客"
 [contact_email]
 other = "邮箱.txt"
 [contact_wechat]
