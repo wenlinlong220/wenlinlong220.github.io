@@ -3,13 +3,13 @@ other = "首页"
 [social]
 other = "社交媒体"
 [blog]
-other = "学习日志"
+other = "博客"
 [portfolio]
 other = "作品集"
 [contact]
 other = "联系我"
 [latest_blog]
-other = "最新学习日志"
+other = "最新博客"
 [all_posts]
 other = "全部"
 [read_more]
