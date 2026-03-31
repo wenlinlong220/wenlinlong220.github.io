@@ -14,7 +14,7 @@ title = "Wen Linlong - Robotics | Control | Mathematics"
   author = "Wen Linlong"
   logo = "Wen Linlong"
   subtitle = "Robotics • Control • Mathematics"
-  description = "A student majoring in Robotics Engineering at Chongqing University. Welcome to exchanging ideas and knowledge in robot control, structural design, and engineering mathematics."
+  description = "Undergraduate student in Robotics Engineering at Chongqing University, focusing on RL-based motion control and smart control system design for robots like UAVs and underwater robots."
   
   # GitHub Information
   githubUsername = "wenlinlong220"
@@ -124,4 +124,4 @@ title = "Wen Linlong - Robotics | Control | Mathematics"
   [[params.contact]]
     icon = "🎯"
     name = "Interest Research"
-    value = "RL-based Motion Control"
+    value = "RL-based Motion Control, Smart Control System Design"

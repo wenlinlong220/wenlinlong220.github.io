@@ -4,7 +4,7 @@
   description: "基于ROS2和Mujoco/MJLab平台的六自由度水下抓取机器人运动控制系统设计"
   tags: ["ROS2", "Mujoco", "PPO算法", "PID控制"]
 
-- title: "智能车竞赛"
+- title: "SmartCar"
   image: "/images/portfolio/smart-car-competition.jpg"
   url: "/projects/smart-car/"
   description: "全国大学生智能汽车竞赛完全模型组，负责视觉循迹算法和运动控制系统"

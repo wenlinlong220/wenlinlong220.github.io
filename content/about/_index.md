@@ -1,6 +1,6 @@
 ---
 title: "About Me"
-description: "Undergraduate student in Robotics Engineering at Chongqing University, focusing on RL-based motion control and UAV system design"
+description: "Undergraduate student in Robotics Engineering at Chongqing University, focusing on RL-based motion control"
 ---
 
 # 关于我
