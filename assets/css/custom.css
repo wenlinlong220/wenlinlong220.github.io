@@ -110,6 +110,8 @@
   margin-left: 2px;
   height: 1lh;
   height: 1em;
+  position: relative;
+  top: -2px;
 }
 
 @keyframes blink {
