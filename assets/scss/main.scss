@@ -1,17 +1,30 @@
 // Variables
-:root {
-  --primary-color: #00d4ff;
-  --secondary-color: #9d50bb;
-  --accent-color: #ff6b6b;
-  --bg-primary: #0a0a0a;
-  --bg-secondary: #1a1a2e;
-  --text-primary: #ffffff;
-  --text-secondary: #888;
-   --glass-bg: rgba(255, 255, 255, 0.05);
-   --glass-border: rgba(255, 255, 255, 0.1);
-   --nav-bg: rgba(26, 26, 46, 0.95);
-   --transition: all 0.3s ease;
-}
+ :root {
+   --primary-color: #00d4ff;
+   --secondary-color: #9d50bb;
+   --accent-color: #ff6b6b;
+   --bg-primary: #0a0a0a;
+   --bg-secondary: #1a1a2e;
+   --text-primary: #ffffff;
+   --text-secondary: #888;
+    --glass-bg: rgba(255, 255, 255, 0.05);
+    --glass-border: rgba(255, 255, 255, 0.1);
+    --nav-bg: rgba(26, 26, 46, 0.95);
+    --transition: all 0.3s ease;
+ }
+ 
+ :root[data-theme="light"] {
+   --primary-color: #0077cc;
+   --secondary-color: #7a3d9c;
+   --accent-color: #e05555;
+   --bg-primary: #f8f9fa;
+   --bg-secondary: #ffffff;
+   --text-primary: #333333;
+   --text-secondary: #666666;
+   --glass-bg: rgba(0, 0, 0, 0.05);
+   --glass-border: rgba(0, 0, 0, 0.1);
+   --nav-bg: rgba(255, 255, 255, 0.95);
+ }
 
 // Base styles
 * {

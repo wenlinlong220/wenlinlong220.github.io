@@ -289,26 +289,7 @@ class NomadTheme {
 
   applyTheme(theme) {
     document.documentElement.setAttribute('data-theme', theme);
-    
-    // Update CSS variables for light theme
-    if (theme === 'light') {
-      document.documentElement.style.setProperty('--bg-primary', '#f8f9fa');
-      document.documentElement.style.setProperty('--bg-secondary', '#ffffff');
-      document.documentElement.style.setProperty('--text-primary', '#333333');
-      document.documentElement.style.setProperty('--text-secondary', '#666666');
-      document.documentElement.style.setProperty('--glass-bg', 'rgba(0, 0, 0, 0.05)');
-      document.documentElement.style.setProperty('--glass-border', 'rgba(0, 0, 0, 0.1)');
-      document.documentElement.style.setProperty('--nav-bg', 'rgba(255, 255, 255, 0.95)');
-    } else {
-      // Dark theme (default)
-      document.documentElement.style.setProperty('--bg-primary', '#0a0a0a');
-      document.documentElement.style.setProperty('--bg-secondary', '#1a1a2e');
-      document.documentElement.style.setProperty('--text-primary', '#ffffff');
-      document.documentElement.style.setProperty('--text-secondary', '#888888');
-      document.documentElement.style.setProperty('--glass-bg', 'rgba(255, 255, 255, 0.05)');
-      document.documentElement.style.setProperty('--glass-border', 'rgba(255, 255, 255, 0.1)');
-      document.documentElement.style.setProperty('--nav-bg', 'rgba(26, 26, 46, 0.95)');
-    }
+  }
   }
 
   updateThemeIcon(iconElement, theme) {
