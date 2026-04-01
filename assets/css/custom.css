@@ -100,17 +100,16 @@
   display: inline-block;
 }
 
-.typewriter-cursor {
+.typewriter-container .typewriter-cursor {
   display: inline-block;
-  color: #9d50bb;
-  font-weight: bold;
+  width: 1px;
+  background-color: #9d50bb;
   animation: blink 1s infinite;
   opacity: 0.7;
   vertical-align: text-bottom;
-  line-height: 1;
-  margin-left: 1px;
-  position: relative;
-  top: 0;
+  margin-left: 2px;
+  height: 1lh;
+  height: 1em;
 }
 
 @keyframes blink {

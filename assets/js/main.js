@@ -643,7 +643,7 @@ function initTypewriter() {
   // 创建光标元素
   const cursor = document.createElement('span');
   cursor.className = 'typewriter-cursor';
-  cursor.textContent = '|';
+  cursor.textContent = '';
   subtitleEl.appendChild(cursor);
   
   let charIndex = 0;
