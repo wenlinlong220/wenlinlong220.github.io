@@ -15,11 +15,19 @@
   // 尽早设置主题以防止闪烁
   (function() {
     try {
+      // 检查是否已经有data-theme属性（防止重复设置）
+      if (document.documentElement.hasAttribute('data-theme')) {
+        return;
+      }
       const savedTheme = localStorage.getItem('theme');
       const theme = savedTheme || 'dark';
       document.documentElement.setAttribute('data-theme', theme);
+      // 存储当前主题到window对象供后续脚本访问
+      window.__currentTheme = theme;
     } catch (e) {
       console.error('Failed to set theme:', e);
+      // 设置默认主题
+      document.documentElement.setAttribute('data-theme', 'dark');
     }
   })();
 </script>

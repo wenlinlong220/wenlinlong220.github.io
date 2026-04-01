@@ -272,24 +272,32 @@ class NomadTheme {
     
     if (!themeToggle || !themeIcon) return;
 
-    // Check for saved theme preference or default to dark
-    const savedTheme = localStorage.getItem('theme') || 'dark';
-    this.applyTheme(savedTheme);
-    this.updateThemeIcon(themeIcon, savedTheme);
+    // 获取当前主题：优先使用data-theme属性，其次localStorage，默认dark
+    const currentTheme = document.documentElement.getAttribute('data-theme') || localStorage.getItem('theme') || 'dark';
+    
+    // 确保主题一致性
+    if (document.documentElement.getAttribute('data-theme') !== currentTheme) {
+      this.applyTheme(currentTheme);
+    }
+    
+    this.updateThemeIcon(themeIcon, currentTheme);
 
     themeToggle.addEventListener('click', () => {
-      const currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
-      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      const current = document.documentElement.getAttribute('data-theme') || 'dark';
+      const newTheme = current === 'dark' ? 'light' : 'dark';
       
       this.applyTheme(newTheme);
       this.updateThemeIcon(themeIcon, newTheme);
       localStorage.setItem('theme', newTheme);
+      
+      // 触发自定义事件供其他组件监听
+      const eventDetail = { theme: newTheme };
+      document.dispatchEvent(new CustomEvent('themechange', { detail: eventDetail }));
     });
   }
 
   applyTheme(theme) {
     document.documentElement.setAttribute('data-theme', theme);
-  }
   }
 
   updateThemeIcon(iconElement, theme) {
