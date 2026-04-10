@@ -1,10 +1,8 @@
 {{ define "main" }}
-<div style="margin-top: 5rem; padding: 2rem;">
-    <div style="max-width: 1200px; margin: 0 auto;">
-        <div style="text-align: center; margin-bottom: 3rem;">
-            <h1 style="color: #00d4ff; font-size: 3rem; margin-bottom: 1rem;">{{ .Title }}</h1>
-            <p style="font-size: 1.2rem; opacity: 0.9;">{{ .Content }}</p>
-        </div>
+<div class="page-header">
+    <div class="page-header-inner">
+        <h1 class="page-title">{{ .Title }}</h1>
+        <div class="page-description">{{ .Content }}</div>
         <div class="portfolio-grid">
             {{ range .Site.Params.portfolio }}
             <div class="portfolio-item">
@@ -12,9 +10,9 @@
                 <div class="portfolio-content">
                     <h3>{{ .title }}</h3>
                     <p>{{ .description }}</p>
-                    <div style="margin-top: 1rem;">
+                    <div class="project-card-tags" style="margin-top: 1rem;">
                         {{ range .tags }}
-                        <span style="background: rgba(0,212,255,0.2); padding: 4px 8px; border-radius: 15px; font-size: 0.8rem;">{{ . }}</span>
+                        <span class="project-card-tag">{{ . }}</span>
                         {{ end }}
                     </div>
                     {{ if .project_url }}
