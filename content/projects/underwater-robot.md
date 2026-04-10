@@ -1,7 +1,7 @@
 ---
 title: "6-DOF Underwater Grasping Robot Development"
 date: 2024-03-30
-type: "Research Project"
+project_type: "Research Project"
 icon: "🤖"
 duration: "Feb 2026 - Present"
 status: "active"

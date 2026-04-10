@@ -5,7 +5,7 @@
             <div class="project-detail-icon">{{ .Params.icon | default "🚀" }}</div>
             <div class="project-detail-info">
                 <h1>{{ .Title }}</h1>
-                <p class="project-detail-type">{{ .Params.type }}</p>
+                <p class="project-detail-type">{{ .Params.project_type | default .Params.type }}</p>
                 <div class="project-detail-meta">
                     <span>{{ .Params.duration }}</span>
                     {{ if .Params.status }}
