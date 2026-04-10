@@ -1,9 +1,9 @@
 .file-listing {
     font-family: 'Source Code Pro', 'Monaco', 'Menlo', monospace;
-    background: rgba(255, 255, 255, 0.02);
+    background: var(--glass-bg);
     padding: 1rem;
     border-radius: 8px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--glass-border);
     font-weight: 500;
 }
 
@@ -15,12 +15,12 @@
     transition: all 0.3s ease;
 
     &:hover {
-        background: rgba(0, 212, 255, 0.1);
+        background: var(--glass-hover);
         padding-left: 10px;
         border-radius: 4px;
     }
 
     a:hover {
-        color: #00d4ff !important;
+        color: var(--primary-color) !important;
     }
 }

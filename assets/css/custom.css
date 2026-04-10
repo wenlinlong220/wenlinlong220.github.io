@@ -1,4 +1,4 @@
-/* 自定义样式修复列表缩进问题 */
+/* 列表缩进 */
 .content ul,
 .content ol {
   margin: 1rem 0;
@@ -13,45 +13,44 @@
   margin-bottom: 0;
 }
 
-/* 改进链接颜色以提高对比度 */
+/* 链接颜色 */
 .content a {
-  color: #4dc3ff; /* 更亮的蓝色，提高对比度 */
+  color: var(--primary-color);
   text-decoration: none;
   transition: all 0.3s ease;
-  border-bottom: 1px solid rgba(77, 195, 255, 0.3);
+  border-bottom: 1px solid var(--tag-border);
   padding-bottom: 1px;
 }
 
 .content a:hover {
-  color: #80d4ff; /* 悬停时更亮 */
-  border-bottom-color: #80d4ff;
+  color: var(--tag-color);
+  border-bottom-color: var(--tag-color);
   text-decoration: none;
 }
 
 .content a:focus {
-  outline: 2px solid #4dc3ff;
+  outline: 2px solid var(--primary-color);
   outline-offset: 2px;
   border-radius: 2px;
 }
 
 /* PDF链接特殊样式 */
 .content a[href$=".pdf"] {
-  color: #9d50bb; /* 紫色，区分PDF链接 */
-  border-bottom-color: rgba(157, 80, 187, 0.3);
+  color: var(--secondary-color);
+  border-bottom-color: var(--blockquote-bg);
 }
 
 .content a[href$=".pdf"]:hover {
-  color: #c27fe0; /* 悬停时更亮的紫色 */
-  border-bottom-color: #c27fe0;
+  opacity: 0.85;
 }
 
 .content a[href$=".pdf"]:focus {
-  outline-color: #9d50bb;
+  outline-color: var(--secondary-color);
 }
 
 /* 链接后的文本样式 */
 .content a + span {
-  color: #888;
+  color: var(--text-muted);
   font-size: 0.9rem;
   margin-left: 0.5rem;
   font-style: italic;
@@ -61,13 +60,14 @@
 .content hr {
   border: none;
   height: 1px;
-  background: linear-gradient(90deg, 
-    transparent 0%, 
-    rgba(0, 212, 255, 0.3) 20%, 
-    rgba(0, 212, 255, 0.6) 50%, 
-    rgba(0, 212, 255, 0.3) 80%, 
+  background: linear-gradient(90deg,
+    transparent 0%,
+    var(--tag-border) 20%,
+    var(--primary-color) 50%,
+    var(--tag-border) 80%,
     transparent 100%);
   margin: 2.5rem 0;
+  opacity: 0.5;
 }
 
 /* 标题间距 */
@@ -81,7 +81,7 @@
   margin-bottom: 0.8rem;
 }
 
- .content h4 {
+.content h4 {
   margin-top: 1.2rem;
   margin-bottom: 0.6rem;
 }
@@ -103,7 +103,7 @@
 .typewriter-container .typewriter-cursor {
   display: inline-block;
   width: 1px;
-  background-color: #9d50bb;
+  background-color: var(--secondary-color);
   animation: blink 1s infinite;
   opacity: 0.7;
   vertical-align: text-bottom;
