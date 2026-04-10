@@ -63,6 +63,14 @@
         border: 1px solid var(--tag-border);
         font-size: 0.9em;
         line-height: 1.5;
+        color: var(--text-body);
+
+        code {
+            background: none;
+            padding: 0;
+            color: inherit;
+            font-size: inherit;
+        }
     }
     
     blockquote {

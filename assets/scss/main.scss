@@ -1074,6 +1074,59 @@ section {
     margin: 2rem 0 1rem 0;
   }
 
+  h3 {
+    color: var(--secondary-color);
+    margin: 1.5rem 0 0.8rem 0;
+  }
+
+  strong {
+    color: var(--primary-color);
+  }
+
+  code {
+    font-family: 'Source Code Pro', 'Monaco', 'Menlo', monospace;
+    background: var(--code-bg);
+    padding: 2px 6px;
+    border-radius: 3px;
+    color: var(--primary-color);
+    font-size: 0.9em;
+  }
+
+  pre {
+    font-family: 'Source Code Pro', 'Monaco', 'Menlo', monospace;
+    background: var(--pre-bg);
+    padding: 1rem;
+    border-radius: 5px;
+    overflow-x: auto;
+    margin: 1rem 0;
+    border: 1px solid var(--tag-border);
+    font-size: 0.9em;
+    line-height: 1.5;
+    color: var(--text-body);
+
+    code {
+      background: none;
+      padding: 0;
+      color: inherit;
+      font-size: inherit;
+    }
+  }
+
+  blockquote {
+    border-left: 4px solid var(--secondary-color);
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0;
+    color: var(--blockquote-color);
+    font-style: italic;
+    background: var(--blockquote-bg);
+    border-radius: 0 5px 5px 0;
+  }
+
+  ul, ol {
+    margin: 1rem 0;
+    padding-left: 2rem;
+  }
+
   a {
     color: var(--primary-color);
     text-decoration: none;
@@ -1351,38 +1404,58 @@ section {
 }
 
 .smartcar-content {
-  background: var(--card-bg);
+  background: rgba(26, 26, 46, 0.75);
   border-radius: 15px;
   padding: 0;
-  border: 1px solid var(--tag-border);
+  border: 1px solid rgba(0, 212, 255, 0.4);
   backdrop-filter: blur(15px);
-  box-shadow: 0 10px 30px var(--shadow-color);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
   position: relative;
   z-index: 2;
   overflow: hidden;
+  // 智能车页面始终保持半透明暗色风格（和视频背景契合）
+  color: #e0e0e0;
+
+  // 智能车页面内部固定亮色文字（因为背景始终是半透明暗色）
+  .terminal-header {
+    background: rgba(22, 33, 62, 0.9);
+    border-bottom: 1px solid rgba(0, 212, 255, 0.1);
+  }
+
+  .terminal-title {
+    color: #888;
+  }
+
+  .prompt {
+    color: #00d4ff;
+  }
+
+  .command {
+    color: #9d50bb;
+  }
 
   .content {
-    color: var(--text-body);
+    color: #e0e0e0;
     margin: 1rem 0;
 
     h1 {
-      color: var(--primary-color);
+      color: #4dc3ff;
       font-size: 2rem;
       margin-bottom: 1.5rem;
       font-family: inherit;
-      border-bottom: 2px solid var(--tag-border);
+      border-bottom: 2px solid rgba(77, 195, 255, 0.3);
       padding-bottom: 0.5rem;
     }
 
     h2 {
-      color: var(--accent-color);
+      color: #ff8b8b;
       font-size: 1.5rem;
       margin: 2rem 0 1rem;
       font-family: inherit;
     }
 
     h3 {
-      color: var(--tag-color);
+      color: #80d4ff;
       font-size: 1.2rem;
       margin: 1.5rem 0 0.8rem;
       font-family: inherit;
@@ -1390,12 +1463,12 @@ section {
 
     p {
       margin-bottom: 1.5rem;
-      color: var(--text-body);
+      color: #e8e8e8;
       line-height: 1.7;
     }
 
     strong {
-      color: var(--primary-color);
+      color: #00d4ff;
     }
 
     ul, ol {
@@ -1405,7 +1478,7 @@ section {
 
     li {
       margin-bottom: 0.5rem;
-      color: var(--text-body);
+      color: #e8e8e8;
     }
 
     hr {
@@ -1413,33 +1486,62 @@ section {
       height: 2px;
       background: linear-gradient(90deg,
         transparent 0%,
-        var(--tag-border) 20%,
-        var(--primary-color) 50%,
-        var(--tag-border) 80%,
+        rgba(77, 195, 255, 0.2) 20%,
+        rgba(77, 195, 255, 0.5) 50%,
+        rgba(77, 195, 255, 0.2) 80%,
         transparent 100%);
       margin: 3rem 0;
-      opacity: 0.5;
     }
 
     a {
-      color: var(--primary-color);
+      color: #4dc3ff;
       text-decoration: none;
       transition: all 0.3s ease;
-      border-bottom: 1px solid var(--tag-border);
+      border-bottom: 1px solid rgba(77, 195, 255, 0.3);
       padding-bottom: 1px;
 
       &:hover {
-        color: var(--tag-color);
-        border-bottom-color: var(--tag-color);
+        color: #80d4ff;
+        border-bottom-color: #80d4ff;
       }
     }
 
     a[href$=".pdf"] {
-      color: var(--secondary-color);
-      border-bottom-color: var(--blockquote-bg);
+      color: #9d50bb;
+      border-bottom-color: rgba(157, 80, 187, 0.3);
 
       &:hover {
-        opacity: 0.85;
+        color: #c27fe0;
+        border-bottom-color: #c27fe0;
+      }
+    }
+
+    code {
+      font-family: 'Source Code Pro', 'Monaco', 'Menlo', monospace;
+      background: rgba(0, 212, 255, 0.1);
+      padding: 2px 6px;
+      border-radius: 3px;
+      color: #00d4ff;
+      font-size: 0.9em;
+    }
+
+    pre {
+      font-family: 'Source Code Pro', 'Monaco', 'Menlo', monospace;
+      background: rgba(0, 0, 0, 0.4);
+      padding: 1rem;
+      border-radius: 5px;
+      overflow-x: auto;
+      margin: 1rem 0;
+      border: 1px solid rgba(0, 212, 255, 0.2);
+      font-size: 0.9em;
+      line-height: 1.5;
+      color: #e0e0e0;
+
+      code {
+        background: none;
+        padding: 0;
+        color: inherit;
+        font-size: inherit;
       }
     }
   }
@@ -1447,31 +1549,31 @@ section {
   .tech-stack {
     margin: 2rem 0;
     padding: 1.2rem;
-    background: var(--tag-bg);
+    background: rgba(0, 212, 255, 0.15);
     border-radius: 10px;
-    border: 1px solid var(--tag-border);
+    border: 1px solid rgba(0, 212, 255, 0.3);
     backdrop-filter: blur(5px);
 
     h3 {
-      color: var(--primary-color);
+      color: #00d4ff;
       margin-bottom: 0.8rem;
       font-size: 1.1rem;
     }
   }
 
   .tech-tag {
-    background: var(--tag-bg);
-    color: var(--tag-color);
+    background: rgba(0, 212, 255, 0.3);
+    color: #b3e6ff;
     padding: 8px 16px;
     border-radius: 20px;
     font-size: 0.9rem;
-    border: 1px solid var(--tag-border);
+    border: 1px solid rgba(0, 212, 255, 0.4);
     transition: all 0.3s ease;
 
     &:hover {
-      background: var(--glass-hover);
+      background: rgba(0, 212, 255, 0.4);
       transform: translateY(-2px);
-      box-shadow: 0 5px 15px var(--shadow-accent);
+      box-shadow: 0 5px 15px rgba(0, 212, 255, 0.2);
     }
   }
 }
