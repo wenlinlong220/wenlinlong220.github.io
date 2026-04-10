@@ -645,7 +645,7 @@ section {
   }
   
   .nav-actions {
-    display: none; // Hide on mobile for simplicity
+    display: flex; // Keep theme toggle visible on mobile
   }
   
   .mobile-menu-btn {
