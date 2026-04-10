@@ -10,6 +10,12 @@ baseURL = "https://wenlinlong220.github.io/"
 languageCode = "en-US"
 title = "Wen Linlong - Robotics | Control | Mathematics"
 
+[markup]
+  [markup.highlight]
+    noClasses = false
+    lineNos = false
+    guessSyntax = true
+
 [params]
   author = "Wen Linlong"
   logo = "Wen Linlong"
