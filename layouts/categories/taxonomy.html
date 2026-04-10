@@ -2,7 +2,7 @@
 <section class="content-section" style="display: block; margin-top: 3rem;">
     <div class="container">
         <h2>{{ .Title }}</h2>
-        <p style="text-align: center; opacity: 0.8; margin-bottom: 2rem;">{{ .Pages | len }} {{ i18n "posts_count" }}</p>
+        <p class="page-description">{{ .Pages | len }} {{ i18n "posts_count" }}</p>
         
         <div class="blog-posts">
             {{ $paginator := .Paginate .Pages 6 }}
@@ -24,7 +24,7 @@
         </div>
         
         {{ if gt $paginator.TotalPages 1 }}
-        <div class="pagination" style="text-align: center; margin-top: 2rem;">
+        <div style="text-align: center; margin-top: 2rem;">
             {{ if $paginator.HasPrev }}
             <a href="{{ $paginator.Prev.URL }}" class="btn btn-secondary">{{ i18n "prev_page" }}</a>
             {{ end }}

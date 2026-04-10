@@ -15,9 +15,9 @@
                 <span class="command">cat 404.md</span>
             </div>
             <div class="error-content">
-                <h1 style="color: #ff5f57; font-size: 4rem; margin: 2rem 0 1rem 0; text-align: center;">404</h1>
-                <h2 style="color: #00d4ff; margin-bottom: 1rem; text-align: center;">Page Not Found</h2>
-                <p style="text-align: center; margin-bottom: 2rem; opacity: 0.8;">
+                <h1 class="error-code">404</h1>
+                <h2 class="error-title">Page Not Found</h2>
+                <p class="error-message">
                     The page you're looking for doesn't exist or has been moved.
                 </p>
                 
@@ -28,20 +28,20 @@
                 
                 <div class="file-listing" style="margin: 1rem 0 2rem 0;">
                     <div class="file-item">
-                        <span style="color: #00d4ff;">📁</span>
-                        <a href="{{ .Site.BaseURL }}" style="color: #9d50bb; text-decoration: none;">home/</a>
+                        <span>📁</span>
+                        <a href="{{ .Site.BaseURL }}" class="file-name">home/</a>
                     </div>
                     <div class="file-item">
-                        <span style="color: #00d4ff;">📁</span>
-                        <a href="{{ .Site.BaseURL }}posts/" style="color: #9d50bb; text-decoration: none;">blog/</a>
+                        <span>📁</span>
+                        <a href="{{ .Site.BaseURL }}posts/" class="file-name">blog/</a>
                     </div>
                     <div class="file-item">
-                        <span style="color: #00d4ff;">📁</span>
-                        <a href="{{ .Site.BaseURL }}about/" style="color: #9d50bb; text-decoration: none;">about/</a>
+                        <span>📁</span>
+                        <a href="{{ .Site.BaseURL }}about/" class="file-name">about/</a>
                     </div>
                     <div class="file-item">
-                        <span style="color: #00d4ff;">📁</span>
-                        <a href="{{ .Site.BaseURL }}social/" style="color: #9d50bb; text-decoration: none;">social/</a>
+                        <span>📁</span>
+                        <a href="{{ .Site.BaseURL }}social/" class="file-name">social/</a>
                     </div>
                 </div>
                 
@@ -53,6 +53,4 @@
         </div>
     </article>
 </div>
-
-
 {{ end }}
