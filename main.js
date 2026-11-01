@@ -110,4 +110,3 @@
   text('year', new Date().getFullYear());
   render();
 })();
-

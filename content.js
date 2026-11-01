@@ -7,7 +7,7 @@ window.PROFILE = {
     biography: ['你好，我是温麟陇，博士就读于浙江大学机械电子工程主页，本科就读于重庆大学机器人工程专业。我的兴趣集中在足式机器人运动控制，尤其关注基于强化学习的机器人运动控制。', '欢迎交流研究想法与项目经验。'],
     contact: '与我联系 ↗',
     research: [
-      { title: '强化学习', description: '关注强化学习在足式机器人运动控制中的应用。' },
+      { title: '强化学习', description: '关注强化学习在足式机器人运动控制中的应用' },
       { title: '电液足式机器人', description: '尝试探索电液驱动的足式机器人的强化学习运动控制设计' }
     ],
     projects: [
@@ -18,7 +18,7 @@ window.PROFILE = {
     ],
     education: [
   {
-    title: '自浙江大学',
+    title: '浙江大学',
     description: '机械工程学院 · 机械电子工程',
     degree: '博士研究生',
     period: '2027 — 我也不知道'
