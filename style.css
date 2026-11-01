@@ -54,3 +54,7 @@ nav a{font-size:14px}.wordmark{font-size:18px}
 .period,.education-row>span{font-family:var(--serif);font-size:15px}
 .skills p{font-family:var(--serif);font-size:16px}
 @media(max-width:760px){body{font-size:17px}.header-inner{gap:12px}.wordmark{font-size:15px}nav a{font-size:12px}h1{font-size:25px}.other-name{font-size:17px;margin-bottom:7px}.role{font-size:12px}.affiliation p{font-size:13px}.affiliation p:first-child{font-size:14px}.location{font-size:12px;margin:8px 0 0}.ui-icon{width:15px;height:15px}.social{flex-direction:row;flex-wrap:wrap;gap:20px;border-top:1px solid var(--line);padding-top:15px}.social a{font-size:13px;gap:6px}h2,.about h2{font-size:23px}#biography p{font-size:17px;line-height:1.85}.research-item p{font-size:16px}.project h3{font-size:20px}.project p{font-size:16px;line-height:1.8}.experience-row h3,.education-row h3{font-size:17px}.experience-row p,.education-row p{font-size:16px}.period{font-size:13px}.education-row>span{font-size:14px}}
+
+/* Use the desktop canvas while retaining compact project thumbnails. */
+@media(min-width:1100px){.header-inner,.layout{width:94%;max-width:1760px}.header-inner{padding-left:24px;padding-right:24px}.layout{grid-template-columns:250px minmax(0,1fr);gap:64px;padding:48px 24px 0}#biography p{max-width:none}.project{grid-template-columns:minmax(0,340px) minmax(0,1fr);gap:34px}}
+@media(min-width:1600px){.layout{grid-template-columns:270px minmax(0,1fr);gap:76px}.profile{top:126px}}
