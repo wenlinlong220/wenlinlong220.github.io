@@ -27,3 +27,6 @@ h2,.about h2{margin-bottom:28px}.section-heading h2{margin-bottom:30px}.research
 @media(max-width:760px){.profile-info{justify-self:center;text-align:left}}
 
 @media(max-width:760px){.profile-info{position:relative;left:-16px}}
+
+/* Keep the English mobile profile centered; preserve the Chinese offset. */
+@media(max-width:760px){html[lang='en'] .profile-info{left:0;justify-self:center}}
