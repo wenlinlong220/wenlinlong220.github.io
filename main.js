@@ -19,11 +19,12 @@
     document.getElementById('research-list').replaceChildren(...data.research.map((item, i) => { const article = node('article', '', 'research-item'); article.append(node('span', String(i + 1).padStart(2, '0'), 'index'), node('h3', item.title), node('p', item.description)); return article; }));
     document.getElementById('project-list').replaceChildren(...data.projects.map(item => {
       const article = node('article', '', 'project');
+      const copy = node('div', '', 'project-copy');
       const meta = node('div', '', 'project-meta');
       meta.append(node('span', item.kind, 'kind'), node('span', item.period));
       const tags = node('div', '', 'tags');
       tags.append(...item.tags.map(t => node('span', t)));
-      article.append(meta, node('h3', item.title), node('p', item.description), tags);
+      copy.append(meta, node('h3', item.title), node('p', item.description), tags);
       if (item.links?.length) {
         const links = node('div', '', 'project-links');
         item.links.forEach(itemLink => {
@@ -33,7 +34,7 @@
           link.rel = 'noopener noreferrer';
           links.append(link);
         });
-        article.append(links);
+        copy.append(links);
       }
       if (item.images?.length) {
         const gallery = node('div', '', 'project-gallery');
@@ -56,6 +57,7 @@
         });
         article.append(gallery);
       }
+      article.append(copy);
       return article;
     }));
     document.getElementById('experience-list').replaceChildren(...data.experience.map(item => { const row = node('div', '', 'experience-row'); const info = node('div'); info.append(node('h3', item.title), node('p', item.description)); row.append(node('span', item.period, 'period'), info); return row; }));
