@@ -24,6 +24,17 @@
       const tags = node('div', '', 'tags');
       tags.append(...item.tags.map(t => node('span', t)));
       article.append(meta, node('h3', item.title), node('p', item.description), tags);
+      if (item.links?.length) {
+        const links = node('div', '', 'project-links');
+        item.links.forEach(itemLink => {
+          const link = node('a', itemLink.label + ' ↗', 'text-link');
+          link.href = itemLink.href;
+          link.target = '_blank';
+          link.rel = 'noopener noreferrer';
+          links.append(link);
+        });
+        article.append(links);
+      }
       if (item.images?.length) {
         const gallery = node('div', '', 'project-gallery');
         item.images.forEach(image => {
@@ -71,3 +82,4 @@
   text('year', new Date().getFullYear());
   render();
 })();
+

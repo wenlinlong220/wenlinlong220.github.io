@@ -13,7 +13,7 @@ window.PROFILE = {
     ],
     projects: [
       { images: [{"src":"assets/underwater-control.png","caption":"模型预测控制与运动学求解","width":1562,"height":866},{"src":"assets/underwater-learning.png","caption":"强化学习与仿真训练框架","width":1557,"height":851}], title: '六自由度水下抓取机器人', kind: '研究项目', period: '2026.02 起', description: '围绕水下机器人的运动控制开展研究，基于 ROS 2 与仿真平台进行 PID、PPO 控制方法的设计与三维轨迹跟踪验证。', tags: ['ROS 2', 'MuJoCo', 'Isaac Lab', 'PPO', 'PID'] },
-      { title: '全国大学生智能汽车竞赛', kind: '竞赛项目', period: '2025', description: '获得全国一等奖，负责视觉循迹算法、运动控制系统搭建与 YOLO 目标检测模型部署。', tags: ['视觉循迹', '运动控制', 'YOLO', 'Ubuntu'] }
+      { ...{"images":[{"src":"assets/smart-car-framework.png","caption":"智能车视觉感知与自主行驶算法框架","width":1707,"height":904}],"links":[{"href":"assets/smart-car-award.pdf","label":"查看获奖证书"}]}, title: '全国大学生智能汽车竞赛', kind: '竞赛项目', period: '2025', description: '获得全国一等奖，负责视觉循迹算法、运动控制系统搭建与 YOLO 目标检测模型部署。', tags: ['视觉循迹', '运动控制', 'YOLO', 'Ubuntu'] }
     ],
     experience: [
       { period: '2024 / 2025', title: '国家奖学金', description: '连续两年获得国家奖学金。' },
@@ -35,7 +35,7 @@ window.PROFILE = {
     ],
     projects: [
       { images: [{"src":"assets/underwater-control.png","caption":"Model predictive control and kinematics","width":1562,"height":866},{"src":"assets/underwater-learning.png","caption":"Reinforcement learning and simulation framework","width":1557,"height":851}], title: '6-DOF underwater grasping robot', kind: 'RESEARCH PROJECT', period: 'Since Feb 2026', description: 'Research on underwater robot motion control, including PID and PPO controller design and evaluation of 3D trajectory tracking using ROS 2 and simulation platforms.', tags: ['ROS 2', 'MuJoCo', 'Isaac Lab', 'PPO', 'PID'] },
-      { title: 'National Undergraduate Intelligent Car Competition', kind: 'COMPETITION PROJECT', period: '2025', description: 'National First Prize. Responsible for vision-based line following, motion control system development, and deployment of a YOLO object detection model.', tags: ['Visual navigation', 'Motion control', 'YOLO', 'Ubuntu'] }
+      { ...{"images":[{"src":"assets/smart-car-framework.png","caption":"Smart car visual perception and autonomous driving framework","width":1707,"height":904}],"links":[{"href":"assets/smart-car-award.pdf","label":"View award certificate"}]}, title: 'National Undergraduate Intelligent Car Competition', kind: 'COMPETITION PROJECT', period: '2025', description: 'National First Prize. Responsible for vision-based line following, motion control system development, and deployment of a YOLO object detection model.', tags: ['Visual navigation', 'Motion control', 'YOLO', 'Ubuntu'] }
     ],
     experience: [
       { period: '2024 / 2025', title: 'National Scholarship', description: 'Awarded the National Scholarship in two consecutive years.' },
