@@ -75,8 +75,34 @@
     document.getElementById('navigation').setAttribute('aria-label', language === 'zh' ? '主导航' : 'Main navigation');
     document.querySelector('.profile').setAttribute('aria-label', language === 'zh' ? '个人信息' : 'Profile');
     document.querySelector('.portrait img').alt = language === 'zh' ? '温麟陇的 GitHub 头像' : 'Wen Linlong’s GitHub avatar';
+    decorateIcons();
     updateActive();
   }
+  function decorateIcons() {
+    const icons = {
+      university: ['M3 9l9-6 9 6', 'M4 10h16', 'M6 10v8m6-8v8m6-8v8', 'M3 21h18M4 18h16'],
+      location: ['M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1116 0Z', 'M15 10a3 3 0 11-6 0 3 3 0 016 0Z'],
+      mail: ['M3 5h18v14H3Z', 'm3 5 9 8 9-8'],
+      github: ['M9 19c-4 1-4-2-6-2', 'M15 22v-4a4 4 0 00-1-3c3-.3 6-1.5 6-6a5 5 0 00-1.4-3.5 5 5 0 00-.1-3.5s-1.2-.4-3.8 1.3a13 13 0 00-7 0C5.1 1.6 4 2 4 2a5 5 0 00-.1 3.5A5 5 0 002.5 9c0 4.5 3 5.7 6 6a4 4 0 00-1 3v4'],
+      video: ['M3 7h18v14H3Z', 'm7 2 4 5m6-5-4 5', 'M8 12v3m8-3v3']
+    };
+    function add(target, name) {
+      if (!target || target.querySelector('.ui-icon')) return;
+      const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+      svg.setAttribute('viewBox', '0 0 24 24');
+      svg.setAttribute('class', 'ui-icon');
+      svg.setAttribute('aria-hidden', 'true');
+      svg.setAttribute('focusable', 'false');
+      icons[name].forEach(d => { const path = document.createElementNS(svg.namespaceURI, 'path'); path.setAttribute('d', d); svg.append(path); });
+      target.prepend(svg);
+    }
+    add(document.getElementById('university'), 'university');
+    add(document.getElementById('location'), 'location');
+    add(document.querySelector('.social a[href^="mailto:"]'), 'mail');
+    add(document.querySelector('.social a[href*="github.com"]'), 'github');
+    add(document.querySelector('.social a[href*="bilibili.com"]'), 'video');
+  }
+
   function updateActive() { let active = ids[0]; ids.forEach(id => { if (document.getElementById(id).getBoundingClientRect().top <= 170) active = id; }); document.querySelectorAll('nav a').forEach(a => { const selected = a.hash === '#' + active; a.classList.toggle('active', selected); if (selected) a.setAttribute('aria-current', 'location'); else a.removeAttribute('aria-current'); }); }
   document.getElementById('language').addEventListener('click', () => { language = language === 'zh' ? 'en' : 'zh'; try { localStorage.setItem('homepage-language', language); } catch (_) {} render(); });
   window.addEventListener('scroll', updateActive, { passive: true });
