@@ -80,8 +80,8 @@
   }
   function researchIcon(index) {
     const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-    svg.setAttribute('viewBox', '0 0 32 32');
-    svg.setAttribute('class', 'research-icon');
+    svg.setAttribute('viewBox', index === 0 ? '0 0 32 32' : '0 0 80 52');
+    svg.setAttribute('class', index === 0 ? 'research-icon' : 'research-icon quadruped-icon');
     svg.setAttribute('aria-hidden', 'true');
     svg.setAttribute('focusable', 'false');
     const paths = index === 0 ? [
@@ -90,10 +90,14 @@
       'M25 27v3H8v-3m3 3-3-3-3 3',
       'M6 16h3m-3 3h3M23 16l3 3m0-3-3 3'
     ] : [
-      'M5 11h17l4 3v4H6zM26 14l4 1v3h-4',
-      'M9 18 5 23l4 6h3M23 18l5 5-4 6h-3',
-      'M12 18l4 5-3 5M20 18l-3 5 3 5',
-      'M9 11V9h10v2M28 16h.2'
+      "M27 9h21q3 0 3 3v11H27zM30 9v14M46 9v14",
+      "M27 12c-3-5-9-5-12 0-2 4 1 10 6 11l6-3M17 11c-3-1-5 1-5 6v5h4",
+      "M51 12c3-5 8-4 11-1l4 4-7 7-8-2",
+      "M21 23l3 13q0 3-3 3L7 34l-3 1-1-3 4-2 14 4-3-12",
+      "M33 23l3 6-4 14 2 2-3 2-3-2 4-15-2-7",
+      "M55 22l2 12q0 3-3 3l-15-4-3 2-1-3 3-2 16 3-3-11",
+      "M63 14l12 10q3 3 1 7l-2 15 3 2-1 2-5-1-1-3 3-17-14-9",
+      "M34 13h6v6h-6zM43 13h.1M43 17h.1M49 16h.1"
     ];
     paths.forEach(d => { const path = document.createElementNS(svg.namespaceURI, 'path'); path.setAttribute('d', d); svg.append(path); });
     return svg;

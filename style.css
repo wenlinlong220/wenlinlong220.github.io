@@ -36,3 +36,9 @@ h2,.about h2{margin-bottom:28px}.section-heading h2{margin-bottom:30px}.research
 .school-cqu{--school-mask:url('assets/icons/cqu.svg')}.school-zju{--school-mask:url('assets/icons/zju.svg')}
 .education-row h3{display:flex;align-items:center;gap:.4em}
 .research-list{padding-left:0;list-style:none}.research-item{position:relative;padding-left:1.7em}.research-icon{position:absolute;left:0;top:.2em;width:1.15em;height:1.15em;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+
+/* Clearer four-legged robot silhouette and a little more room by school names. */
+.quadruped-icon{width:1.5em;height:1.4em;top:.05em;left:-.1em;stroke-width:1.8}.education-row h3{column-gap:.65em}
+
+/* Trotting quadruped outline traced to the supplied reference pose. */
+.quadruped-icon{width:1.8em;height:1.4em;left:-.3em;top:.05em;stroke-width:2.1}
