@@ -16,7 +16,7 @@
     ids.forEach((id, i) => { const visible = id !== 'experience' || data.experience.length > 0; document.getElementById(id).hidden = !visible; if (!visible) return; const a = node('a', data.nav[i]); a.href = '#' + id; nav.append(a); text(id + '-title', data.titles[i]); });
     document.getElementById('biography').replaceChildren(...data.biography.map(p => node('p', p)));
     text('contact-link', data.contact);
-    document.getElementById('research-list').replaceChildren(...data.research.map((item, i) => { const article = node('li', '', 'research-item'); article.append(node('h3', item.title), node('p', item.description)); return article; }));
+    document.getElementById('research-list').replaceChildren(...data.research.map((item, i) => { const article = node('li', '', 'research-item'); article.append(researchIcon(i), node('h3', item.title), node('p', item.description)); return article; }));
     document.getElementById('project-list').replaceChildren(...data.projects.map(item => {
       const article = node('article', '', 'project');
       const copy = node('div', '', 'project-copy');
@@ -78,6 +78,38 @@
     decorateIcons();
     updateActive();
   }
+  function researchIcon(index) {
+    const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+    svg.setAttribute('viewBox', '0 0 32 32');
+    svg.setAttribute('class', 'research-icon');
+    svg.setAttribute('aria-hidden', 'true');
+    svg.setAttribute('focusable', 'false');
+    const paths = index === 0 ? [
+      'M3 12h9v11H3zM20 12h9v11h-9z',
+      'M7 8V5h17v3m-3-3 3 3 3-3',
+      'M25 27v3H8v-3m3 3-3-3-3 3',
+      'M6 16h3m-3 3h3M23 16l3 3m0-3-3 3'
+    ] : [
+      'M5 11h17l4 3v4H6zM26 14l4 1v3h-4',
+      'M9 18 5 23l4 6h3M23 18l5 5-4 6h-3',
+      'M12 18l4 5-3 5M20 18l-3 5 3 5',
+      'M9 11V9h10v2M28 16h.2'
+    ];
+    paths.forEach(d => { const path = document.createElementNS(svg.namespaceURI, 'path'); path.setAttribute('d', d); svg.append(path); });
+    return svg;
+  }
+  function decorateSchoolEmblems() {
+    document.querySelectorAll('#university, .education-row h3').forEach(target => {
+      if (target.querySelector('.school-emblem')) return;
+      const label = target.textContent;
+      const school = /重庆大学|Chongqing University/.test(label) ? 'cqu' : /浙江大学|Zhejiang University/.test(label) ? 'zju' : null;
+      if (!school) return;
+      const icon = node('span', '', 'school-emblem school-' + school);
+      icon.setAttribute('aria-hidden', 'true');
+      target.prepend(icon);
+    });
+  }
+
   function decorateIcons() {
     const icons = {
       university: ['M3 9l9-6 9 6', 'M4 10h16', 'M6 10v8m6-8v8m6-8v8', 'M3 21h18M4 18h16'],
@@ -96,7 +128,7 @@
       icons[name].forEach(d => { const path = document.createElementNS(svg.namespaceURI, 'path'); path.setAttribute('d', d); svg.append(path); });
       target.prepend(svg);
     }
-    add(document.getElementById('university'), 'university');
+    decorateSchoolEmblems();
     add(document.getElementById('location'), 'location');
     add(document.querySelector('.social a[href^="mailto:"]'), 'mail');
     add(document.querySelector('.social a[href*="github.com"]'), 'github');

@@ -30,3 +30,9 @@ h2,.about h2{margin-bottom:28px}.section-heading h2{margin-bottom:30px}.research
 
 /* Keep the English mobile profile centered; preserve the Chinese offset. */
 @media(max-width:760px){html[lang='en'] .profile-info{left:0;justify-self:center}}
+
+/* Inline, text-colored university seals and research line icons. */
+.school-emblem{display:inline-block;width:1em;height:1em;flex:0 0 1em;background-color:currentColor;-webkit-mask:var(--school-mask) center/contain no-repeat;mask:var(--school-mask) center/contain no-repeat;align-self:center}
+.school-cqu{--school-mask:url('assets/icons/cqu.svg')}.school-zju{--school-mask:url('assets/icons/zju.svg')}
+.education-row h3{display:flex;align-items:center;gap:.4em}
+.research-list{padding-left:0;list-style:none}.research-item{position:relative;padding-left:1.7em}.research-icon{position:absolute;left:0;top:.2em;width:1.15em;height:1.15em;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}

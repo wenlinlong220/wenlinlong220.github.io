@@ -1,0 +1,4 @@
+University emblems extracted from lovefc/china_school_badge (Apache-2.0).
+Source: https://github.com/lovefc/china_school_badge
+University names and emblems remain the property of their respective universities.
+Research line icons drawn for this homepage; the quadruped is a Unitree-style robot silhouette, not a corporate logo.
