@@ -17,9 +17,46 @@
     document.getElementById('biography').replaceChildren(...data.biography.map(p => node('p', p)));
     text('contact-link', data.contact);
     document.getElementById('research-list').replaceChildren(...data.research.map((item, i) => { const article = node('article', '', 'research-item'); article.append(node('span', String(i + 1).padStart(2, '0'), 'index'), node('h3', item.title), node('p', item.description)); return article; }));
-    document.getElementById('project-list').replaceChildren(...data.projects.map(item => { const article = node('article', '', 'project'); const meta = node('div', '', 'project-meta'); meta.append(node('span', item.kind, 'kind'), node('span', item.period)); const tags = node('div', '', 'tags'); tags.append(...item.tags.map(t => node('span', t))); article.append(meta, node('h3', item.title), node('p', item.description), tags); return article; }));
+    document.getElementById('project-list').replaceChildren(...data.projects.map(item => {
+      const article = node('article', '', 'project');
+      const meta = node('div', '', 'project-meta');
+      meta.append(node('span', item.kind, 'kind'), node('span', item.period));
+      const tags = node('div', '', 'tags');
+      tags.append(...item.tags.map(t => node('span', t)));
+      article.append(meta, node('h3', item.title), node('p', item.description), tags);
+      if (item.images?.length) {
+        const gallery = node('div', '', 'project-gallery');
+        item.images.forEach(image => {
+          const figure = node('figure');
+          const link = node('a');
+          link.href = image.src;
+          link.target = '_blank';
+          link.rel = 'noopener noreferrer';
+          link.setAttribute('aria-label', image.caption + (language === 'zh' ? '（新窗口查看原图）' : ' (open full image in a new tab)'));
+          const img = node('img');
+          img.src = image.src;
+          img.alt = image.caption;
+          img.loading = 'lazy';
+          img.width = image.width;
+          img.height = image.height;
+          link.append(img);
+          figure.append(link, node('figcaption', image.caption));
+          gallery.append(figure);
+        });
+        article.append(gallery);
+      }
+      return article;
+    }));
     document.getElementById('experience-list').replaceChildren(...data.experience.map(item => { const row = node('div', '', 'experience-row'); const info = node('div'); info.append(node('h3', item.title), node('p', item.description)); row.append(node('span', item.period, 'period'), info); return row; }));
-    const education = node('div', '', 'education-row'); const info = node('div'); info.append(node('h3', data.education.title), node('p', data.education.description)); education.append(info, node('span', data.education.degree)); document.getElementById('education-content').replaceChildren(education);
+    const educationItems = Array.isArray(data.education) ? data.education : [data.education];
+    document.getElementById('education-content').replaceChildren(...educationItems.map(item => {
+      const row = node('div', '', 'education-row');
+      const info = node('div');
+      info.append(node('h3', item.title), node('p', [item.description, item.degree].filter(Boolean).join(' · ')));
+      row.append(info);
+      if (item.period) row.append(node('span', item.period));
+      return row;
+    }));
     text('skills-title', data.skills); text('back-top', data.backTop);
     const button = document.getElementById('language'); button.replaceChildren(document.createTextNode(language === 'zh' ? 'EN ' : '中文 '), node('span', '↗')); button.setAttribute('aria-label', language === 'zh' ? 'Switch to English' : '切换为中文');
     document.getElementById('navigation').setAttribute('aria-label', language === 'zh' ? '主导航' : 'Main navigation');
