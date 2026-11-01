@@ -19,3 +19,6 @@ h2,.about h2{margin-bottom:28px}.section-heading h2{margin-bottom:30px}.research
 
 /* Match the portrait and personal information heights on phones. */
 .profile-info{display:contents}@media(max-width:760px){.profile{grid-template-columns:minmax(0,35%) minmax(0,1fr);column-gap:18px;align-items:stretch}.profile-info{display:flex;flex-direction:column;grid-column:2;grid-row:1;min-width:0}.profile-info .location{margin-bottom:0}.portrait{grid-column:1;grid-row:1;width:100%;height:auto;min-height:0;align-self:stretch;margin:0;position:relative}.portrait img{position:absolute;left:3px;top:3px;width:calc(100% - 6px);height:calc(100% - 6px);object-fit:cover;object-position:center}.social{grid-row:2}}
+
+/* Right-align the mobile information block, keeping its text left-aligned. */
+@media(max-width:760px){.profile-info{width:fit-content;max-width:100%;justify-self:end;text-align:left;align-items:flex-start}.profile-info .affiliation,.profile-info .location,.profile-info h1,.profile-info .other-name,.profile-info .role{text-align:left}}
