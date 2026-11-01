@@ -13,10 +13,10 @@
     ['name', 'role', 'university', 'school', 'location'].forEach(id => text(id, data[id]));
     text('other-name', data.otherName);
     const nav = document.getElementById('navigation'); nav.replaceChildren();
-    ids.forEach((id, i) => { const a = node('a', data.nav[i]); a.href = '#' + id; nav.append(a); text(id + '-title', data.titles[i]); });
+    ids.forEach((id, i) => { const visible = id !== 'experience' || data.experience.length > 0; document.getElementById(id).hidden = !visible; if (!visible) return; const a = node('a', data.nav[i]); a.href = '#' + id; nav.append(a); text(id + '-title', data.titles[i]); });
     document.getElementById('biography').replaceChildren(...data.biography.map(p => node('p', p)));
     text('contact-link', data.contact);
-    document.getElementById('research-list').replaceChildren(...data.research.map((item, i) => { const article = node('article', '', 'research-item'); article.append(node('span', String(i + 1).padStart(2, '0'), 'index'), node('h3', item.title), node('p', item.description)); return article; }));
+    document.getElementById('research-list').replaceChildren(...data.research.map((item, i) => { const article = node('li', '', 'research-item'); article.append(node('h3', item.title), node('p', item.description)); return article; }));
     document.getElementById('project-list').replaceChildren(...data.projects.map(item => {
       const article = node('article', '', 'project');
       const copy = node('div', '', 'project-copy');
@@ -24,7 +24,7 @@
       meta.append(node('span', item.kind, 'kind'), node('span', item.period));
       const tags = node('div', '', 'tags');
       tags.append(...item.tags.map(t => node('span', t)));
-      copy.append(meta, node('h3', item.title), node('p', item.description), tags);
+      copy.append(meta, node('h3', item.title), node('p', item.description));
       if (item.links?.length) {
         const links = node('div', '', 'project-links');
         item.links.forEach(itemLink => {
@@ -70,11 +70,11 @@
       if (item.period) row.append(node('span', item.period));
       return row;
     }));
-    text('skills-title', data.skills); text('back-top', data.backTop);
+    text('back-top', data.backTop);
     const button = document.getElementById('language'); button.replaceChildren(document.createTextNode(language === 'zh' ? 'EN ' : '中文 '), node('span', '↗')); button.setAttribute('aria-label', language === 'zh' ? 'Switch to English' : '切换为中文');
     document.getElementById('navigation').setAttribute('aria-label', language === 'zh' ? '主导航' : 'Main navigation');
     document.querySelector('.profile').setAttribute('aria-label', language === 'zh' ? '个人信息' : 'Profile');
-    document.querySelector('.portrait img').alt = language === 'zh' ? '温麟陇的 GitHub 头像' : 'Wen Linlong’s GitHub avatar';
+    document.querySelector('.portrait img').alt = language === 'zh' ? '温麟陇的机器人头像' : 'Wen Linlong’s robot avatar';
     decorateIcons();
     updateActive();
   }
@@ -103,7 +103,7 @@
     add(document.querySelector('.social a[href*="bilibili.com"]'), 'video');
   }
 
-  function updateActive() { let active = ids[0]; ids.forEach(id => { if (document.getElementById(id).getBoundingClientRect().top <= 170) active = id; }); document.querySelectorAll('nav a').forEach(a => { const selected = a.hash === '#' + active; a.classList.toggle('active', selected); if (selected) a.setAttribute('aria-current', 'location'); else a.removeAttribute('aria-current'); }); }
+  function updateActive() { let active = ids[0]; ids.forEach(id => { if (!document.getElementById(id).hidden && document.getElementById(id).getBoundingClientRect().top <= 170) active = id; }); document.querySelectorAll('nav a').forEach(a => { const selected = a.hash === '#' + active; a.classList.toggle('active', selected); if (selected) a.setAttribute('aria-current', 'location'); else a.removeAttribute('aria-current'); }); }
   document.getElementById('language').addEventListener('click', () => { language = language === 'zh' ? 'en' : 'zh'; try { localStorage.setItem('homepage-language', language); } catch (_) {} render(); });
   window.addEventListener('scroll', updateActive, { passive: true });
   document.querySelector('.portrait img').addEventListener('error', event => { event.target.style.visibility = 'hidden'; });
