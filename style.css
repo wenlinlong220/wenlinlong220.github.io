@@ -25,3 +25,5 @@ h2,.about h2{margin-bottom:28px}.section-heading h2{margin-bottom:30px}.research
 
 /* Center the information block within the area beside the mobile portrait. */
 @media(max-width:760px){.profile-info{justify-self:center;text-align:left}}
+
+@media(max-width:760px){.profile-info{position:relative;left:-8px}}
