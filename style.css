@@ -17,3 +17,5 @@
 @media(max-width:1000px) and (min-width:761px){.project{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:20px}}
 @media(max-width:760px){.project{grid-template-columns:1fr;gap:17px;padding-bottom:25px;margin-bottom:25px}.project-gallery{max-width:360px;width:100%;gap:10px}.project-copy{grid-row:1}.project-gallery{grid-row:2}.project h3{font-size:16px}}
 
+
+.project-copy{align-self:start}
