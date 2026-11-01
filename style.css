@@ -16,3 +16,6 @@ main{min-width:0}section{margin-bottom:45px;scroll-margin-top:105px}h2{font:700 
 
 /* Give headings and explanations more breathing room in both languages. */
 h2,.about h2{margin-bottom:28px}.section-heading h2{margin-bottom:30px}.research-item{margin-bottom:22px}.research-item h3{margin-inline-end:.55em}.research-item h3:after{content:':'}.research-item p{line-height:1.85}.project h3{margin-bottom:18px}.experience-row h3,.education-row h3{margin-bottom:9px}@media(max-width:760px){h2,.about h2,.section-heading h2{margin-bottom:25px}.research-item{margin-bottom:20px}.research-item h3{margin-inline-end:.45em}.project h3{margin-bottom:15px}}
+
+/* Match the portrait and personal information heights on phones. */
+.profile-info{display:contents}@media(max-width:760px){.profile{grid-template-columns:minmax(0,35%) minmax(0,1fr);column-gap:18px;align-items:stretch}.profile-info{display:flex;flex-direction:column;grid-column:2;grid-row:1;min-width:0}.profile-info .location{margin-bottom:0}.portrait{grid-column:1;grid-row:1;width:100%;height:auto;min-height:0;align-self:stretch;margin:0;position:relative}.portrait img{position:absolute;left:3px;top:3px;width:calc(100% - 6px);height:calc(100% - 6px);object-fit:cover;object-position:center}.social{grid-row:2}}
