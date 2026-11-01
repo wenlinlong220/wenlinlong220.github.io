@@ -37,22 +37,36 @@ window.PROFILE = {
     name: 'Wen Linlong', otherName: '温麟陇', role: 'Undergraduate · Robotics Engineering', university: 'Chongqing University', school: 'School of Mechanical and Vehicle Engineering', location: 'Chongqing, China',
     nav: ['About', 'Research', 'Projects', 'Experience', 'Education'],
     titles: ['About me', 'Research interests', 'Research & projects', 'Honors & experience', 'Education'],
-    biography: ['Hello, I’m Wen Linlong, an undergraduate studying Robotics Engineering at Chongqing University. My interests lie in quadrupedal robot motion control, with a particular focus on reinforcement learning for robot motion control.', 'Through research projects and student competitions, I explore how control theory and learning algorithms can come together in robotic systems. I welcome conversations about research ideas and project experiences.'],
+    biography: ['Hello, I’m Wen Linlong. I am pursuing a Ph.D. in Mechatronic Engineering at Zhejiang University and studied Robotics Engineering as an undergraduate at Chongqing University. My research interests focus on legged robot motion control, particularly reinforcement learning for robot motion control.', 'I welcome conversations about research ideas and project experiences.'],
     contact: 'Get in touch ↗',
     research: [
-      { title: 'Quadrupedal robot motion control', description: 'Investigating motion modeling, trajectory tracking, and control algorithms for quadrupedal robots.' },
-      { title: 'Reinforcement learning', description: 'Exploring PPO and related methods for robot motion control.' },
-      { title: 'Simulation & systems', description: 'Algorithm development and evaluation with ROS 2, MuJoCo, and Isaac Lab.' }
+      { title: 'Reinforcement learning', description: 'Applying reinforcement learning to motion control for legged robots.' },
+      { title: 'Electro-hydraulic legged robots', description: 'Exploring reinforcement learning-based motion control for electro-hydraulically actuated legged robots.' }
     ],
     projects: [
-      { images: [{"src":"assets/underwater-control.png","caption":"Model predictive control and kinematics","width":1562,"height":866},{"src":"assets/underwater-learning.png","caption":"Reinforcement learning and simulation framework","width":1557,"height":851}], title: '6-DOF underwater grasping robot', kind: 'RESEARCH PROJECT', period: 'Since Feb 2026', description: 'Research on underwater robot motion control, including PID and PPO controller design and evaluation of 3D trajectory tracking using ROS 2 and simulation platforms.', tags: ['ROS 2', 'MuJoCo', 'Isaac Lab', 'PPO', 'PID'] },
-      { ...{"images":[{"src":"assets/smart-car-framework.png","caption":"Smart car visual perception and autonomous driving framework","width":1707,"height":904}],"links":[{"href":"assets/smart-car-award.pdf","label":"View award certificate"}]}, title: 'National Undergraduate Intelligent Car Competition', kind: 'COMPETITION PROJECT', period: '2025', description: 'National First Prize. Responsible for vision-based line following, motion control system development, and deployment of a YOLO object detection model.', tags: ['Visual navigation', 'Motion control', 'YOLO', 'Ubuntu'] }
+      {
+        title: '6-DOF underwater grasping robot', kind: 'UNDERGRADUATE RESEARCH PROJECT', period: 'Feb 2026 - Jul 2026',
+        description: 'Research on underwater robot motion control, including MPC, PID, and PPO controller design and evaluation of 3D trajectory tracking using ROS 2 and simulation platforms.',
+        tags: ['ROS 2', 'MuJoCo', 'MJLAB', 'PPO', 'MPC'],
+        images: [
+          { src: 'assets/underwater-control.png', caption: 'Model predictive control and kinematics', width: 1562, height: 866 },
+          { src: 'assets/underwater-learning.png', caption: 'Reinforcement learning and simulation framework', width: 1557, height: 851 }
+        ]
+      },
+      {
+        title: 'National Undergraduate Intelligent Car Competition — Full Model Category', kind: 'COMPETITION PROJECT', period: 'Feb 2025 - Aug 2025',
+        description: 'National First Prize. Responsible for vision-based line following, motion control system development, and deployment of a YOLO object detection model.',
+        tags: ['Visual line following', 'Motion control', 'YOLO', 'Ubuntu'],
+        images: [{ src: 'assets/smart-car-framework.png', caption: 'Smart car visual perception and autonomous driving framework', width: 1707, height: 904 }],
+        links: [{ href: 'assets/smart-car-award.pdf', label: 'View award certificate' }]
+      }
     ],
-    experience: [
-      { period: '2024 / 2025', title: 'National Scholarship', description: 'Awarded the National Scholarship in two consecutive years.' },
-      { period: '2025', title: 'National First Prize · Intelligent Car Competition', description: 'Contributed to vision algorithms and motion control systems.' },
-      { period: '2025—2026', title: 'Course teaching assistant · Excellent TA', description: 'Teaching assistant for Fundamentals of Control Theory and Mechanical Drawing.' }
+    experience: [],
+    education: [
+      { title: 'Zhejiang University', description: 'School of Mechanical Engineering · Mechatronic Engineering', degree: 'Ph.D. student', period: '2027 — End date TBD' },
+      { title: 'Chongqing University', description: 'School of Mechanical and Vehicle Engineering · Robotics Engineering', degree: 'Undergraduate', period: '2023 — 2027' }
     ],
-    education: { title: 'Chongqing University', description: 'Robotics Engineering · School of Mechanical and Vehicle Engineering', degree: 'Undergraduate' }, skills: 'TOOLS & SKILLS', backTop: 'Back to top ↑'
+    skills: 'TOOLS & SKILLS',
+    backTop: 'Back to top ↑'
   }
 };
