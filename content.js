@@ -4,7 +4,7 @@ window.PROFILE = {
     name: '温麟陇', otherName: 'Wen Linlong', role: '机器人工程 · 本科生', university: '重庆大学', school: '机械与运载工程学院', location: '中国 · 重庆',
     nav: ['关于我', '研究方向', '项目', '经历', '教育'],
     titles: ['关于我', '研究方向', '研究与项目', '荣誉与经历', '教育背景'],
-    biography: ['你好，我是温麟陇，博士就读于浙江大学机械电子工程专业，本科就读于重庆大学机器人工程专业。我的兴趣集中在足式机器人运动控制，尤其关注基于强化学习的机器人运动控制。', '欢迎交流研究想法与项目经验。'],
+    biography: ['你好，我是温麟陇，未来将攻读浙江大学机械电子工程专业的博士学位，本科就读于重庆大学机器人工程专业。我的兴趣集中在足式机器人运动控制，尤其关注基于强化学习的机器人运动控制。', '欢迎交流研究想法与项目经验。'],
     contact: '与我联系 ↗',
     research: [
       { title: '强化学习', description: '关注强化学习在足式机器人运动控制中的应用' },
@@ -36,7 +36,7 @@ window.PROFILE = {
     name: 'Wen Linlong', otherName: '温麟陇', role: 'Undergraduate · Robotics Engineering', university: 'Chongqing University', school: 'School of Mechanical and Vehicle Engineering', location: 'Chongqing, China',
     nav: ['About Me', 'Research Interests', 'Projects', 'Experience', 'Education'],
     titles: ['About Me', 'Research Interests', 'Research & Projects', 'Honors & Experience', 'Education'],
-    biography: ['Hello, I’m Wen Linlong. I am pursuing a Ph.D. in Mechatronic Engineering at Zhejiang University and studied Robotics Engineering as an undergraduate at Chongqing University. My research interests focus on legged robot motion control, particularly reinforcement learning for robot motion control.', 'I welcome conversations about research ideas and project experiences.'],
+    biography: ['Hello, my name is Wen Linlong. I will be pursuing a PhD in Mechatronics Engineering at Zhejiang University, having completed my undergraduate degree in Robotics Engineering at Chongqing University. My research interests focus on legged robot motion control, particularly reinforcement learning for robot motion control.', 'I welcome conversations about research ideas and project experiences.'],
     contact: 'Get in touch ↗',
     research: [
       { title: 'Reinforcement Learning', description: 'Applying reinforcement learning to motion control for legged robots.' },
