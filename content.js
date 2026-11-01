@@ -1,10 +1,10 @@
 // 日常更新只需修改此文件。每条资料分别维护 zh（中文）和 en（英文）。
 window.PROFILE = {
   zh: {
-    name: '温麟陇', otherName: 'Wen Linlong', role: '机器人工程 · 本科生', university: '重庆大学', school: '机械与运载工程学院', location: '中国 · 重庆',
+    name: '温麟陇', otherName: 'Wen Linlong', role: '机器人工程 · 本科在读', university: '重庆大学', school: '机械与运载工程学院', location: '中国 · 重庆',
     nav: ['关于我', '研究方向', '项目', '经历', '教育'],
     titles: ['关于我', '研究方向', '研究与项目', '荣誉与经历', '教育背景'],
-    biography: ['你好，我是温麟陇，未来将攻读浙江大学机械电子工程专业的博士学位，本科就读于重庆大学机器人工程专业。我的兴趣集中在足式机器人运动控制，尤其关注基于强化学习的机器人运动控制。', '欢迎交流研究想法与项目经验。'],
+    biography: ['你好，我是温麟陇，目前是重庆大学机器人工程专业本科生，预计于2027年毕业。计划于2027年赴浙江大学攻读机械电子工程博士学位。我的兴趣集中在足式机器人运动控制，尤其关注基于强化学习的机器人运动控制。', '欢迎交流研究想法与项目经验。'],
     contact: '与我联系 ↗',
     research: [
       { title: '强化学习', description: '关注强化学习在足式机器人运动控制中的应用' },
@@ -20,23 +20,23 @@ window.PROFILE = {
   {
     title: '浙江大学',
     description: '机械工程学院 · 机械电子工程',
-    degree: '博士研究生',
-    period: '2027 — 我也不知道'
+    degree: '博士阶段（计划）',
+    period: '2027 起（计划）'
   },
   {
     title: '重庆大学',
     description: '机械与运载工程学院 · 机器人工程',
-    degree: '本科',
-    period: '2023 — 2027'
+    degree: '本科在读',
+    period: '2023 — 2027（预计）'
   }
 ],
   backTop: '返回顶部 ↑'
   },
   en: {
-    name: 'Wen Linlong', otherName: '温麟陇', role: 'Undergraduate · Robotics Engineering', university: 'Chongqing University', school: 'School of Mechanical and Vehicle Engineering', location: 'Chongqing, China',
+    name: 'Wen Linlong', otherName: '温麟陇', role: 'Undergraduate Student · Robotics Engineering', university: 'Chongqing University', school: 'School of Mechanical and Vehicle Engineering', location: 'Chongqing, China',
     nav: ['About Me', 'Research Interests', 'Projects', 'Experience', 'Education'],
     titles: ['About Me', 'Research Interests', 'Research & Projects', 'Honors & Experience', 'Education'],
-    biography: ['Hello, my name is Wen Linlong. I will be pursuing a PhD in Mechatronics Engineering at Zhejiang University, having completed my undergraduate degree in Robotics Engineering at Chongqing University. My research interests focus on legged robot motion control, particularly reinforcement learning for robot motion control.', 'I welcome conversations about research ideas and project experiences.'],
+    biography: ['Hello, my name is Wen Linlong. I am currently an undergraduate student in Robotics Engineering at Chongqing University, expecting to graduate in 2027. I plan to begin Ph.D. studies in Mechatronic Engineering at Zhejiang University in 2027. My research interests focus on legged robot motion control, particularly reinforcement learning for robot motion control.', 'I welcome conversations about research ideas and project experiences.'],
     contact: 'Get in touch ↗',
     research: [
       { title: 'Reinforcement Learning', description: 'Applying reinforcement learning to motion control for legged robots.' },
@@ -62,8 +62,8 @@ window.PROFILE = {
     ],
     experience: [],
     education: [
-      { title: 'Zhejiang University', description: 'School of Mechanical Engineering · Mechatronic Engineering', degree: 'Ph.D. student', period: '2027 — End date TBD' },
-      { title: 'Chongqing University', description: 'School of Mechanical and Vehicle Engineering · Robotics Engineering', degree: 'Undergraduate', period: '2023 — 2027' }
+      { title: 'Zhejiang University', description: 'School of Mechanical Engineering · Mechatronic Engineering', degree: 'Planned Ph.D. Studies', period: 'From 2027 (planned)' },
+      { title: 'Chongqing University', description: 'School of Mechanical and Vehicle Engineering · Robotics Engineering', degree: 'Undergraduate (in progress)', period: '2023 — 2027 (expected)' }
     ],
     backTop: 'Back to top ↑'
   }
