@@ -53,7 +53,7 @@ window.PROFILE = {
         ]
       },
       {
-        title: 'National Undergraduate Intelligent Car Competition — Full Model Category', kind: 'Competition Project', period: 'Feb 2025 - Aug 2025',
+        title: 'National Undergraduate Intelligent Car Competition — Model Category', kind: 'Competition Project', period: 'Feb 2025 - Aug 2025',
         description: 'National First Prize. Responsible for vision-based line following, motion control system development, and deployment of a YOLO object detection model.',
         tags: ['Visual line following', 'Motion control', 'YOLO', 'Ubuntu'],
         images: [{ src: 'assets/smart-car-framework.png', width: 1707, height: 904 }],
