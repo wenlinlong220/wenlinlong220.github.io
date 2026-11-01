@@ -7,8 +7,8 @@ window.PROFILE = {
     biography: ['你好，我是温麟陇，目前是重庆大学机器人工程专业本科生，预计于2027年毕业。计划于2027年赴浙江大学攻读机械电子工程博士学位。我的兴趣集中在足式机器人运动控制，尤其关注基于强化学习的机器人运动控制。', '欢迎交流研究想法与项目经验。'],
     contact: '与我联系 ↗',
     research: [
-      { title: '强化学习', description: '关注强化学习在足式机器人运动控制中的应用' },
-      { title: '电液足式机器人', description: '尝试探索电液驱动的足式机器人的强化学习运动控制设计' }
+      { title: '强化学习', description: ' 关注强化学习在足式机器人运动控制中的应用' },
+      { title: '电液足式机器人', description: ' 尝试探索电液驱动的足式机器人的强化学习运动控制设计' }
     ],
     projects: [
       { images: [{"src":"assets/underwater-control.png","height":866},{"src":"assets/underwater-learning.png","width":1557,"height":851}], title: '六自由度水下抓取机器人', kind: '本科阶段研究项目', period: '2026.02 - 2026.07', description: '围绕水下机器人的运动控制开展研究，基于 ROS 2 与 MUJOCO 仿真平台进行 MPC、PID、PPO 控制方法的设计与三维轨迹跟踪验证。', tags: ['ROS 2', 'MuJoCo', 'MJLAB', 'PPO', 'MPC'] },
@@ -39,8 +39,8 @@ window.PROFILE = {
     biography: ['Hello, my name is Wen Linlong. I am currently an undergraduate student in Robotics Engineering at Chongqing University, expecting to graduate in 2027. I plan to begin Ph.D. studies in Mechatronic Engineering at Zhejiang University in 2027. My research interests focus on legged robot motion control, particularly reinforcement learning for robot motion control.', 'I welcome conversations about research ideas and project experiences.'],
     contact: 'Get in touch ↗',
     research: [
-      { title: 'Reinforcement Learning', description: 'Applying reinforcement learning to motion control for legged robots.' },
-      { title: 'Electro-Hydraulic Legged Robots', description: 'Exploring reinforcement learning-based motion control for electro-hydraulically actuated legged robots.' }
+      { title: 'Reinforcement Learning', description: ' Applying reinforcement learning to motion control for legged robots.' },
+      { title: 'Electro-Hydraulic Legged Robots', description: ' Exploring reinforcement learning-based motion control for electro-hydraulically actuated legged robots.' }
     ],
     projects: [
       {
