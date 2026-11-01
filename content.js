@@ -11,7 +11,7 @@ window.PROFILE = {
       { title: '电液足式机器人', description: '尝试探索电液驱动的足式机器人的强化学习运动控制设计' }
     ],
     projects: [
-      { images: [{"src":"assets/underwater-control.png","height":866},{"src":"assets/underwater-learning.png","width":1557,"height":851}], title: '六自由度水下抓取机器人', kind: '本科阶段研究项目', period: '2026.02 - 2026.07', description: '围绕水下机器人的运动控制开展研究，基于 ROS 2 与仿真平台进行 MPC、PID、PPO 控制方法的设计与三维轨迹跟踪验证。', tags: ['ROS 2', 'MuJoCo', 'MJLAB', 'PPO', 'MPC'] },
+      { images: [{"src":"assets/underwater-control.png","height":866},{"src":"assets/underwater-learning.png","width":1557,"height":851}], title: '六自由度水下抓取机器人', kind: '本科阶段研究项目', period: '2026.02 - 2026.07', description: '围绕水下机器人的运动控制开展研究，基于 ROS 2 与 MUJOCO 仿真平台进行 MPC、PID、PPO 控制方法的设计与三维轨迹跟踪验证。', tags: ['ROS 2', 'MuJoCo', 'MJLAB', 'PPO', 'MPC'] },
       { ...{"images":[{"src":"assets/smart-car-framework.png","width":1707,"height":904}],"links":[{"href":"assets/smart-car-award.pdf","label":"查看获奖证书"}]}, title: '全国大学生智能汽车竞赛-完全模型组', kind: '竞赛项目', period: '2025.02 - 2025.08', description: '获得全国一等奖，负责视觉循迹算法、运动控制系统搭建与 YOLO 目标检测模型部署。', tags: ['视觉循迹', '运动控制', 'YOLO', 'Ubuntu'] }
     ],
     experience: [
@@ -45,7 +45,7 @@ window.PROFILE = {
     projects: [
       {
         title: '6-DOF underwater grasping robot', kind: 'Undergraduate Research Project', period: 'Feb 2026 - Jul 2026',
-        description: 'Research on underwater robot motion control, including MPC, PID, and PPO controller design and evaluation of 3D trajectory tracking using ROS 2 and simulation platforms.',
+        description: 'Research on underwater robot motion control, including MPC, PID, and PPO controller design and evaluation of 3D trajectory tracking using ROS 2 and MUJOCO simulation platforms.',
         tags: ['ROS 2', 'MuJoCo', 'MJLAB', 'PPO', 'MPC'],
         images: [
           { src: 'assets/underwater-control.png', width: 1562, height: 866 },
