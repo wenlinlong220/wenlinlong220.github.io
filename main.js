@@ -48,6 +48,8 @@
     ids.forEach((id, i) => { const visible = id !== 'experience' || data.experience.length > 0; document.getElementById(id).hidden = !visible; if (!visible) return; const a = node('a', data.nav[i]); a.href = '#' + id; nav.append(a); text(id + '-title', data.titles[i]); });
     document.getElementById('biography').replaceChildren(...data.biography.map(p => node('p', p)));
     text('contact-link', data.contact);
+    text('cv-link', language === 'zh' ? '简历 / CV' : 'CV');
+    document.getElementById('cv-link').setAttribute('aria-label', language === 'zh' ? '查看简历（PDF，在新标签页打开）' : 'View CV (PDF, opens in a new tab)');
     document.getElementById('research-list').replaceChildren(...data.research.map((item, i) => { const article = node('li', '', 'research-item'); article.append(researchIcon(i), node('h3', item.title), node('p', item.description)); return article; }));
     document.getElementById('project-list').replaceChildren(...data.projects.map(item => {
       const article = node('article', '', 'project');
@@ -170,6 +172,7 @@
       university: ['M3 9l9-6 9 6', 'M4 10h16', 'M6 10v8m6-8v8m6-8v8', 'M3 21h18M4 18h16'],
       location: ['M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1116 0Z', 'M15 10a3 3 0 11-6 0 3 3 0 016 0Z'],
       mail: ['M3 5h18v14H3Z', 'm3 5 9 8 9-8'],
+      document: ['M14 2H5v20h14V7Z', 'M14 2v5h5', 'M8 12h8M8 16h8'],
       github: ['M9 19c-4 1-4-2-6-2', 'M15 22v-4a4 4 0 00-1-3c3-.3 6-1.5 6-6a5 5 0 00-1.4-3.5 5 5 0 00-.1-3.5s-1.2-.4-3.8 1.3a13 13 0 00-7 0C5.1 1.6 4 2 4 2a5 5 0 00-.1 3.5A5 5 0 002.5 9c0 4.5 3 5.7 6 6a4 4 0 00-1 3v4'],
       video: ['M3 7h18v14H3Z', 'm7 2 4 5m6-5-4 5', 'M8 12v3m8-3v3']
     };
@@ -185,6 +188,7 @@
     }
     decorateSchoolEmblems();
     add(document.getElementById('location'), 'location');
+    add(document.getElementById('cv-link'), 'document');
     add(document.querySelector('.social a[href^="mailto:"]'), 'mail');
     add(document.querySelector('.social a[href*="github.com"]'), 'github');
     add(document.querySelector('.social a[href*="bilibili.com"]'), 'video');
