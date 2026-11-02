@@ -2,7 +2,7 @@
 window.PROFILE = {
   zh: {
     name: '温麟陇', otherName: 'Wen Linlong', role: '机器人工程 · 本科在读', university: '重庆大学', school: '机械与运载工程学院', location: '中国 · 重庆',
-    nav: ['关于我', '研究方向', '项目', '经历', '教育'],
+    nav: ['关于我', '研究方向', '项目', '经历', '教育背景'],
     titles: ['关于我', '研究方向', '研究与项目', '荣誉与经历', '教育背景'],
     biography: ['你好，我是温麟陇，目前是重庆大学机器人工程专业本科生。计划于2027年赴浙江大学攻读机械电子工程博士学位。主要研究关于足式机器人的运动控制，尤其是基于强化学习的机器人运动控制。', '欢迎交流研究想法与经验。'],
     contact: '与我联系 ↗',
@@ -23,7 +23,7 @@ window.PROFILE = {
           {
             "src": "assets/underwater-learning.gif",
             "previewSrc": "assets/underwater-learning.webp",
-            "alt": "PPO 训练与仿真框架",
+            "alt": "强化学习训练框架",
             "width": 1200,
             "height": 675
           }
@@ -47,11 +47,11 @@ window.PROFILE = {
           },
           {
             "title": "MPC–解析反解控制",
-            "description": "基于 ROS 2 与 MuJoCo，结合标称动力学 MPC 与解析反解，实现三维轨迹跟踪。"
+            "description": "基于 ROS 2 与 MuJoCo 仿真平台，结合标称动力学 MPC 与解析反解，实现三维轨迹跟踪。"
           },
           {
             "title": "PPO 动态抓捕",
-            "description": "基于 MJLAB 与 PPO，设计位姿—速度梯度下降耦合奖励，实现近端动态抓捕控制。"
+            "description": "基于 MJLAB 强化学习训练框架并应用 PPO 算法，设计位姿—速度梯度下降耦合奖励，实现近端动态抓捕控制。"
           }
         ]
       },
@@ -104,8 +104,8 @@ window.PROFILE = {
   },
   en: {
     name: 'Wen Linlong', otherName: '温麟陇', role: 'Undergraduate Student · Robotics Engineering', university: 'Chongqing University', school: 'School of Mechanical and Vehicle Engineering', location: 'Chongqing, China',
-    nav: ['About Me', 'Research Interests', 'Projects', 'Experience', 'Education'],
-    titles: ['About Me', 'Research Interests', 'Research & Projects', 'Honors & Experience', 'Education'],
+    nav: ['About Me', 'Research Interests', 'Research and Projects', 'Experience', 'Education'],
+    titles: ['About Me', 'Research Interests', 'Research and Projects', 'Honors & Experience', 'Education'],
     biography: ['Hello, my name is Wen Linlong. I am currently an undergraduate student in Robotics Engineering at Chongqing University. I plan to begin Ph.D. studies in Mechatronic Engineering at Zhejiang University in 2027. My research interests focus on legged robot motion control, particularly reinforcement learning for robot motion control.', 'I welcome conversations about research ideas and project experiences.'],
     contact: 'Get in touch ↗',
     research: [
@@ -116,9 +116,9 @@ window.PROFILE = {
       {
         "id": "underwater-robot",
         "title": "6-DOF Underwater Grasping Robot Development",
-        "kind": "National Key Undergraduate Innovation Project (Priority Area)",
+        "kind": "National Undergraduate Innovation Project (Priority Area)",
         "period": "Feb 2026 — Present",
-        "description": "Motion control for a two-servo, four-thruster underwater robot operating in confined spaces.",
+        "description": "Motion control for a two-servo, four-thruster underwater robot designed for grasping in confined spaces.",
         "tags": [
           "ROS 2",
           "MuJoCo",
@@ -137,7 +137,7 @@ window.PROFILE = {
           {
             "src": "assets/underwater-learning.gif",
             "previewSrc": "assets/underwater-learning.webp",
-            "alt": "PPO training and simulation framework",
+            "alt": "Reinforcement learning training framework",
             "width": 1200,
             "height": 675
           }
@@ -145,15 +145,15 @@ window.PROFILE = {
         "work": [
           {
             "title": "Motion Mode Design",
-            "description": "Proposed virtual-friction-based 3D curve tracking inspired by differential-drive motion."
+            "description": "Proposed a virtual-friction-based 3D curve-tracking method inspired by differential-drive vehicles."
           },
           {
             "title": "MPC–Inverse Kinematics Control",
-            "description": "Combined nominal-dynamics MPC and analytical inverse kinematics in ROS 2 and MuJoCo for 3D trajectory tracking."
+            "description": "Combined nominal-dynamics MPC with analytical inverse kinematics in ROS 2 and MuJoCo simulation for 3D trajectory tracking."
           },
           {
             "title": "PPO-Based Dynamic Grasping",
-            "description": "Used MJLAB and PPO with coupled pose–velocity reward shaping based on gradient descent for close-range dynamic grasping."
+            "description": "Applied PPO in the MJLAB reinforcement learning framework, using coupled pose–velocity reward shaping based on gradient descent for close-range dynamic grasping control."
           }
         ]
       },
