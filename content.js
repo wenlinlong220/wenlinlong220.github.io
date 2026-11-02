@@ -4,10 +4,10 @@ window.PROFILE = {
     name: '温麟陇', otherName: 'Wen Linlong', role: '机器人工程 · 本科在读', university: '重庆大学', school: '机械与运载工程学院', location: '中国 · 重庆',
     nav: ['关于我', '研究方向', '项目', '经历', '教育'],
     titles: ['关于我', '研究方向', '研究与项目', '荣誉与经历', '教育背景'],
-    biography: ['你好，我是温麟陇，目前是重庆大学机器人工程专业本科生，预计于2027年毕业。计划于2027年赴浙江大学攻读机械电子工程博士学位。我的兴趣集中在足式机器人运动控制，尤其关注基于强化学习的机器人运动控制。', '欢迎交流研究想法与项目经验。'],
+    biography: ['你好，我是温麟陇，目前是重庆大学机器人工程专业本科生。计划于2027年赴浙江大学攻读机械电子工程博士学位。主要研究关于足式机器人的运动控制，尤其是基于强化学习的机器人运动控制。', '欢迎交流研究想法与经验。'],
     contact: '与我联系 ↗',
     research: [
-      { title: '强化学习', description: ' 关注强化学习在足式机器人运动控制中的应用' },
+      { title: '强化学习', description: ' 研究强化学习在足式机器人运动控制中的应用' },
       { title: '电液足式机器人', description: ' 尝试探索电液驱动的足式机器人的强化学习运动控制设计' }
     ],
     projects: [
@@ -36,7 +36,7 @@ window.PROFILE = {
     name: 'Wen Linlong', otherName: '温麟陇', role: 'Undergraduate Student · Robotics Engineering', university: 'Chongqing University', school: 'School of Mechanical and Vehicle Engineering', location: 'Chongqing, China',
     nav: ['About Me', 'Research Interests', 'Projects', 'Experience', 'Education'],
     titles: ['About Me', 'Research Interests', 'Research & Projects', 'Honors & Experience', 'Education'],
-    biography: ['Hello, my name is Wen Linlong. I am currently an undergraduate student in Robotics Engineering at Chongqing University, expecting to graduate in 2027. I plan to begin Ph.D. studies in Mechatronic Engineering at Zhejiang University in 2027. My research interests focus on legged robot motion control, particularly reinforcement learning for robot motion control.', 'I welcome conversations about research ideas and project experiences.'],
+    biography: ['Hello, my name is Wen Linlong. I am currently an undergraduate student in Robotics Engineering at Chongqing University. I plan to begin Ph.D. studies in Mechatronic Engineering at Zhejiang University in 2027. My research interests focus on legged robot motion control, particularly reinforcement learning for robot motion control.', 'I welcome conversations about research ideas and project experiences.'],
     contact: 'Get in touch ↗',
     research: [
       { title: 'Reinforcement Learning', description: ' Applying reinforcement learning to motion control for legged robots.' },
