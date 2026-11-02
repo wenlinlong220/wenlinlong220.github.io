@@ -158,7 +158,7 @@ window.PROFILE = {
         ]
       },
       {
-        "title": "National Undergraduate Intelligent Car Competition — Full Model Category",
+        "title": "National Undergraduate Intelligent Car Competition — Model Category",
         "kind": "National First Prize",
         "period": "Feb 2025 — Aug 2025",
         "description": "Developed visual navigation in Ubuntu: eight-neighborhood track following and adaptive variable-gain cornering control; YOLO detection of cones, pedestrians, and roadblocks; smooth obstacle avoidance using cubic Bézier curves; and recognition of temporary parking areas and intersections with state-machine switching.",
