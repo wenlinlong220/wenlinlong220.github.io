@@ -31,7 +31,7 @@ window.PROFILE = {
         "id": "underwater-robot",
         "title": "6-DOF 水下抓取机器人研发",
         "kind": "本科国家级大创项目（重点支持领域）",
-        "period": "2026.02 — 至今",
+        "period": "2026.02 — 2026.07",
         "description": "面向狭小空间抓取，研究“2 舵机—4 推进器”水下机器人的运动控制。",
         "tags": [
           "ROS 2",
@@ -117,7 +117,7 @@ window.PROFILE = {
         "id": "underwater-robot",
         "title": "6-DOF Underwater Grasping Robot Development",
         "kind": "National Undergraduate Innovation Project (Priority Area)",
-        "period": "Feb 2026 — Present",
+        "period": "Feb 2026 — Jul 2026",
         "description": "Motion control for a two-servo, four-thruster underwater robot designed for grasping in confined spaces.",
         "tags": [
           "ROS 2",
