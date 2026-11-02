@@ -124,6 +124,14 @@
       return row;
     }));
     text('back-top', data.backTop);
+    const updated = document.getElementById('last-updated');
+    const updatedDate = document.querySelector('meta[name="site-updated"]').content;
+    updated.hidden = !updatedDate;
+    if (updatedDate) {
+      const updatedTime = node('time', new Intl.DateTimeFormat(language === 'zh' ? 'zh-CN' : 'en', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' }).format(new Date(updatedDate + 'T00:00:00Z')));
+      updatedTime.dateTime = updatedDate;
+      updated.replaceChildren(document.createTextNode(language === 'zh' ? '最后更新：' : 'Last updated: '), updatedTime);
+    }
     const button = document.getElementById('language'); button.replaceChildren(document.createTextNode(language === 'zh' ? 'EN ' : '中文 '), node('span', '↗')); button.setAttribute('aria-label', language === 'zh' ? 'Switch to English' : '切换为中文');
     document.getElementById('navigation').setAttribute('aria-label', language === 'zh' ? '主导航' : 'Main navigation');
     document.querySelector('.profile').setAttribute('aria-label', language === 'zh' ? '个人信息' : 'Profile');
