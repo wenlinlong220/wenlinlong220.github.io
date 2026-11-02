@@ -25,6 +25,15 @@
       const tags = node('div', '', 'tags');
       tags.append(...item.tags.map(t => node('span', t)));
       copy.append(meta, node('h3', item.title), node('p', item.description));
+      if (item.work?.length) {
+        const work = node('div', '', 'project-work');
+        item.work.forEach(task => {
+          const paragraph = node('p');
+          paragraph.append(node('strong', task.title + (language === 'zh' ? '：' : ': ')), document.createTextNode(task.description));
+          work.append(paragraph);
+        });
+        copy.append(work);
+      }
       if (item.links?.length) {
         const links = node('div', '', 'project-links');
         item.links.forEach(itemLink => {

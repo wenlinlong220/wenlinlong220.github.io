@@ -45,3 +45,6 @@ h2,.about h2{margin-bottom:28px}.section-heading h2{margin-bottom:30px}.research
 
 /* Space icons from titles; let mobile continuation lines use the full row. */
 .research-item{padding-left:2.35em}.research-icon{left:.35em}.quadruped-icon{left:0}@media(max-width:760px){.research-item{padding-left:0}.research-icon{position:static;display:inline-block;margin-inline-end:.55em;vertical-align:-.25em}.quadruped-icon{vertical-align:-.3em}}
+
+/* Project responsibilities are readable paragraphs in both languages. */
+.project-work{margin:17px 0 0}.project-work p{margin:0 0 12px}.project-work strong{font-weight:700}
