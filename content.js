@@ -50,7 +50,34 @@ window.PROFILE = {
           }
         ]
       },
-      { ...{"images":[{"src":"assets/smart-car-framework.png","width":1707,"height":904}],"links":[{"href":"assets/smart-car-award.pdf","label":"查看获奖证书"}]}, title: '全国大学生智能汽车竞赛-完全模型组', kind: '竞赛项目', period: '2025.02 - 2025.08', description: '获得全国一等奖，负责视觉循迹算法、运动控制系统搭建与 YOLO 目标检测模型部署。', tags: ['视觉循迹', '运动控制', 'YOLO', 'Ubuntu'] }
+      {
+        "images": [
+          {
+            "src": "assets/smart-car-framework.png",
+            "width": 1707,
+            "height": 904
+          }
+        ],
+        "links": [
+          {
+            "href": "assets/smart-car-award.pdf",
+            "label": "查看获奖证书"
+          }
+        ],
+        "title": "全国大学生智能汽车竞赛（完全模型组）",
+        "kind": "全国一等奖",
+        "period": "2025.02 — 2025.08",
+        "description": "在 Ubuntu 下开发视觉导航模块：基于八邻域算法实现赛道巡线，设计自适应变增益弯道控制；结合 YOLO 识别锥桶、行人与路障，利用三阶贝塞尔曲线规划平滑避障路径，并完成临时停车区、十字路口识别及状态机切换。",
+        "tags": [
+          "Ubuntu",
+          "八邻域巡线",
+          "自适应弯道控制",
+          "YOLO",
+          "贝塞尔曲线",
+          "状态机"
+        ],
+        "id": "smart-car"
+      }
     ],
     experience: [
     ],
@@ -122,11 +149,32 @@ window.PROFILE = {
         ]
       },
       {
-        title: 'National Undergraduate Intelligent Car Competition — Model Category', kind: 'Competition Project', period: 'Feb 2025 - Aug 2025',
-        description: 'National First Prize. Responsible for vision-based line following, motion control system development, and deployment of a YOLO object detection model.',
-        tags: ['Visual line following', 'Motion control', 'YOLO', 'Ubuntu'],
-        images: [{ src: 'assets/smart-car-framework.png', width: 1707, height: 904 }],
-        links: [{ href: 'assets/smart-car-award.pdf', label: 'View award certificate' }]
+        "title": "National Undergraduate Intelligent Car Competition — Full Model Category",
+        "kind": "National First Prize",
+        "period": "Feb 2025 — Aug 2025",
+        "description": "Developed visual navigation in Ubuntu: eight-neighborhood track following and adaptive variable-gain cornering control; YOLO detection of cones, pedestrians, and roadblocks; smooth obstacle avoidance using cubic Bézier curves; and recognition of temporary parking areas and intersections with state-machine switching.",
+        "tags": [
+          "Ubuntu",
+          "Eight-neighborhood tracking",
+          "Adaptive cornering",
+          "YOLO",
+          "Bézier curves",
+          "State machines"
+        ],
+        "images": [
+          {
+            "src": "assets/smart-car-framework.png",
+            "width": 1707,
+            "height": 904
+          }
+        ],
+        "links": [
+          {
+            "href": "assets/smart-car-award.pdf",
+            "label": "View award certificate"
+          }
+        ],
+        "id": "smart-car"
       }
     ],
     experience: [],

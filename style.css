@@ -51,3 +51,6 @@ h2,.about h2{margin-bottom:28px}.section-heading h2{margin-bottom:30px}.research
 
 /* Keep the underwater project's detailed copy smaller than general page text. */
 .project[data-project="underwater-robot"] .project-copy p{font-size:17px;line-height:1.75}.project[data-project="underwater-robot"] h3{font-size:22px}.project[data-project="underwater-robot"] .project-meta{font-size:12px}.project[data-project="underwater-robot"] .project-work{margin-top:12px}.project[data-project="underwater-robot"] .project-work p{margin-bottom:10px}@media(max-width:760px){.project[data-project="underwater-robot"] .project-copy p{font-size:16px}.project[data-project="underwater-robot"] h3{font-size:20px}}
+
+/* Match the smart-car project typography to the underwater project. */
+.project[data-project="smart-car"] .project-copy p{font-size:17px;line-height:1.75}.project[data-project="smart-car"] h3{font-size:22px}.project[data-project="smart-car"] .project-meta{font-size:12px}@media(max-width:760px){.project[data-project="smart-car"] .project-copy p{font-size:16px}.project[data-project="smart-car"] h3{font-size:20px}}
