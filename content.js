@@ -14,13 +14,18 @@ window.PROFILE = {
       {
         "images": [
           {
-            "src": "assets/underwater-control.png",
-            "height": 866
+            "src": "assets/underwater-control.gif",
+            "previewSrc": "assets/underwater-control.webp",
+            "alt": "MPC 轨迹跟踪与运动学反解",
+            "width": 1200,
+            "height": 675
           },
           {
-            "src": "assets/underwater-learning.png",
-            "width": 1557,
-            "height": 851
+            "src": "assets/underwater-learning.gif",
+            "previewSrc": "assets/underwater-learning.webp",
+            "alt": "PPO 训练与仿真框架",
+            "width": 1200,
+            "height": 675
           }
         ],
         "id": "underwater-robot",
@@ -123,14 +128,18 @@ window.PROFILE = {
         ],
         "images": [
           {
-            "src": "assets/underwater-control.png",
-            "width": 1562,
-            "height": 866
+            "src": "assets/underwater-control.gif",
+            "previewSrc": "assets/underwater-control.webp",
+            "alt": "MPC trajectory tracking and inverse kinematics",
+            "width": 1200,
+            "height": 675
           },
           {
-            "src": "assets/underwater-learning.png",
-            "width": 1557,
-            "height": 851
+            "src": "assets/underwater-learning.gif",
+            "previewSrc": "assets/underwater-learning.webp",
+            "alt": "PPO training and simulation framework",
+            "width": 1200,
+            "height": 675
           }
         ],
         "work": [

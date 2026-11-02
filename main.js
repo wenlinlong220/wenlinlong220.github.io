@@ -5,6 +5,38 @@
   const node = (tag, value, className) => { const el = document.createElement(tag); if (value) el.textContent = value; if (className) el.className = className; return el; };
   let language = 'zh';
   try { language = localStorage.getItem('homepage-language') === 'en' ? 'en' : 'zh'; } catch (_) {}
+  const imageViewer = node('dialog', '', 'image-viewer');
+  const viewerClose = node('button', '×', 'image-viewer-close');
+  viewerClose.type = 'button';
+  const viewerImage = node('img', '', 'image-viewer-image');
+  const viewerCaption = node('p', '', 'image-viewer-caption');
+  viewerCaption.id = 'image-viewer-caption';
+  imageViewer.setAttribute('aria-labelledby', viewerCaption.id);
+  imageViewer.append(viewerClose, viewerImage, viewerCaption);
+  document.body.append(imageViewer);
+  let imageTrigger = null;
+  function openImage(image, fallbackTitle, trigger) {
+    const label = image.alt || image.caption || fallbackTitle;
+    imageTrigger = trigger;
+    viewerImage.src = image.src;
+    viewerImage.alt = label;
+    viewerCaption.textContent = label;
+    viewerClose.setAttribute('aria-label', language === 'zh' ? '关闭图片' : 'Close image');
+    imageViewer.showModal();
+    viewerClose.focus();
+  }
+  viewerClose.addEventListener('click', () => imageViewer.close());
+  imageViewer.addEventListener('click', event => {
+    if (event.target !== imageViewer) return;
+    const bounds = imageViewer.getBoundingClientRect();
+    if (event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom) imageViewer.close();
+  });
+  imageViewer.addEventListener('close', () => {
+    viewerImage.removeAttribute('src');
+    if (imageTrigger?.isConnected) imageTrigger.focus();
+    imageTrigger = null;
+  });
+
   function render() {
     const data = window.PROFILE[language];
     document.documentElement.lang = language === 'zh' ? 'zh-CN' : 'en';
@@ -52,17 +84,26 @@
           const figure = node('figure');
           const link = node('a');
           link.href = image.src;
-          link.target = '_blank';
-          link.rel = 'noopener noreferrer';
-          link.setAttribute('aria-label', image.caption + (language === 'zh' ? '（新窗口查看原图）' : ' (open full image in a new tab)'));
+          const imageLabel = image.alt || image.caption || item.title;
+          link.setAttribute('aria-label', imageLabel + (language === 'zh' ? '（点击放大）' : ' (enlarge image)'));
+          link.addEventListener('click', event => { event.preventDefault(); openImage(image, item.title, link); });
           const img = node('img');
           img.src = image.src;
-          img.alt = image.caption;
+          img.alt = imageLabel;
           img.loading = 'lazy';
-          img.width = image.width;
-          img.height = image.height;
-          link.append(img);
-          figure.append(link, node('figcaption', image.caption));
+          if (image.width) img.width = image.width;
+          if (image.height) img.height = image.height;
+          const picture = node('picture');
+          if (image.previewSrc) {
+            const source = node('source');
+            source.type = 'image/webp';
+            source.srcset = image.previewSrc;
+            picture.append(source);
+          }
+          picture.append(img);
+          link.append(picture);
+          figure.append(link);
+          if (image.caption) figure.append(node('figcaption', image.caption));
           gallery.append(figure);
         });
         article.append(gallery);
