@@ -19,6 +19,7 @@
     document.getElementById('research-list').replaceChildren(...data.research.map((item, i) => { const article = node('li', '', 'research-item'); article.append(researchIcon(i), node('h3', item.title), node('p', item.description)); return article; }));
     document.getElementById('project-list').replaceChildren(...data.projects.map(item => {
       const article = node('article', '', 'project');
+      if (item.id) article.dataset.project = item.id;
       const copy = node('div', '', 'project-copy');
       const meta = node('div', '', 'project-meta');
       meta.append(node('span', item.kind, 'kind'), node('span', item.period));

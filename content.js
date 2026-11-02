@@ -23,10 +23,11 @@ window.PROFILE = {
             "height": 851
           }
         ],
+        "id": "underwater-robot",
         "title": "6-DOF水下抓取机器人研发",
         "kind": "本科国家级重点大创（重点支持领域）",
         "period": "2026.02 — 至今",
-        "description": "面向水下狭小空间抓取任务，围绕“2 舵机—4 推进器”的机械构型，开展运动模式、三维轨迹跟踪与近端动态抓捕控制研究。",
+        "description": "面向狭小空间抓取，研究“2 舵机—4 推进器”水下机器人的运动控制。",
         "tags": [
           "ROS 2",
           "MuJoCo",
@@ -37,15 +38,15 @@ window.PROFILE = {
         "work": [
           {
             "title": "运动模式设计",
-            "description": "参考车辆差动前进模式，针对该机械构型提出基于虚拟摩擦力的三维曲线跟踪方案。"
+            "description": "借鉴车辆差动模式，提出基于虚拟摩擦力的三维曲线跟踪方案。"
           },
           {
-            "title": "MPC-解析反解分层控制",
-            "description": "基于 ROS 2 与 MuJoCo，设计并实现标称动力学 MPC 运动控制系统；针对耦合构型设计运动学解析反解器，实现三维空间曲线跟踪。"
+            "title": "MPC–解析反解控制",
+            "description": "基于 ROS 2 与 MuJoCo，结合标称动力学 MPC 与解析反解，实现三维轨迹跟踪。"
           },
           {
-            "title": "PPO 近端动态抓捕控制",
-            "description": "基于 MJLAB，采用 PPO，通过位姿—速度梯度下降耦合奖励塑形，实现近端动态抓捕模式的运动控制。"
+            "title": "PPO 动态抓捕",
+            "description": "基于 MJLAB 与 PPO，设计位姿—速度梯度下降耦合奖励，实现近端动态抓捕控制。"
           }
         ]
       },
@@ -81,10 +82,11 @@ window.PROFILE = {
     ],
     projects: [
       {
+        "id": "underwater-robot",
         "title": "6-DOF Underwater Grasping Robot Development",
         "kind": "National Key Undergraduate Innovation Project (Priority Area)",
         "period": "Feb 2026 — Present",
-        "description": "Investigated motion modes, 3D trajectory tracking, and close-range dynamic grasping control for a robot with two servomotors and four thrusters, designed for grasping tasks in confined underwater spaces.",
+        "description": "Motion control for a two-servo, four-thruster underwater robot operating in confined spaces.",
         "tags": [
           "ROS 2",
           "MuJoCo",
@@ -107,15 +109,15 @@ window.PROFILE = {
         "work": [
           {
             "title": "Motion Mode Design",
-            "description": "Proposed a virtual-friction-based 3D curve-tracking method for the robot’s mechanical configuration, drawing on differential-drive vehicle motion."
+            "description": "Proposed virtual-friction-based 3D curve tracking inspired by differential-drive motion."
           },
           {
-            "title": "Hierarchical MPC–Analytical Inverse Kinematics Control",
-            "description": "Designed and implemented a nominal-dynamics MPC motion control system using ROS 2 and MuJoCo, and developed an analytical inverse kinematics solver for the coupled configuration to track 3D spatial curves."
+            "title": "MPC–Inverse Kinematics Control",
+            "description": "Combined nominal-dynamics MPC and analytical inverse kinematics in ROS 2 and MuJoCo for 3D trajectory tracking."
           },
           {
-            "title": "PPO-Based Close-Range Dynamic Grasping Control",
-            "description": "Used PPO in MJLAB with coupled pose–velocity reward shaping based on gradient descent to implement motion control for close-range dynamic grasping."
+            "title": "PPO-Based Dynamic Grasping",
+            "description": "Used MJLAB and PPO with coupled pose–velocity reward shaping based on gradient descent for close-range dynamic grasping."
           }
         ]
       },

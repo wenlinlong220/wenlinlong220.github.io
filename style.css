@@ -48,3 +48,6 @@ h2,.about h2{margin-bottom:28px}.section-heading h2{margin-bottom:30px}.research
 
 /* Project responsibilities are readable paragraphs in both languages. */
 .project-work{margin:17px 0 0}.project-work p{margin:0 0 12px}.project-work strong{font-weight:700}
+
+/* Keep the underwater project's detailed copy smaller than general page text. */
+.project[data-project="underwater-robot"] .project-copy p{font-size:17px;line-height:1.75}.project[data-project="underwater-robot"] h3{font-size:22px}.project[data-project="underwater-robot"] .project-meta{font-size:12px}.project[data-project="underwater-robot"] .project-work{margin-top:12px}.project[data-project="underwater-robot"] .project-work p{margin-bottom:10px}@media(max-width:760px){.project[data-project="underwater-robot"] .project-copy p{font-size:16px}.project[data-project="underwater-robot"] h3{font-size:20px}}
