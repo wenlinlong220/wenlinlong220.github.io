@@ -12,6 +12,19 @@ window.PROFILE = {
     ],
     projects: [
       {
+        id: 'wheeled-legged-thesis',
+        title: '面向负载自适应的四轮足机器人运动控制',
+        kind: '本科毕业设计 · 研究中',
+        period: '2026.11 — 至今',
+        description: '针对四轮足机器人在携带负载和偏置负载时面临的运动适应性问题，搭建覆盖不同负载条件与复杂地形的训练平台，并研究负载及地形自适应运动控制算法。',
+        tags: ['四轮足机器人', '负载自适应', '复杂地形', '运动控制'],
+        images: [{ src: 'assets/wheeled-legged-training.gif', alt: '四轮足机器人在复杂地形中的仿真训练场景', caption: '四轮足机器人复杂地形仿真训练场景', width: 800, height: 408 }],
+        work: [
+          { title: '训练平台搭建', description: '构建包含动载、偏载与复杂地形的机器人训练环境，为控制策略的训练和评估提供基础。' },
+          { title: '自适应算法研究', description: '面向负载变化和复杂地形，探索机器人运动控制策略，提高其在不同条件下的适应能力。' }
+        ]
+      },
+      {
         "images": [
           {
             "src": "assets/underwater-control.gif",
@@ -113,6 +126,19 @@ window.PROFILE = {
       { title: 'Electro-Hydraulic Legged Robots', description: ' Exploring reinforcement learning-based motion control for electro-hydraulically actuated legged robots.' }
     ],
     projects: [
+      {
+        id: 'wheeled-legged-thesis',
+        title: 'Load-Adaptive Locomotion Control for a Four-Wheeled-Legged Robot',
+        kind: 'Undergraduate Thesis · Ongoing',
+        period: 'Nov 2026 — Present',
+        description: 'Developing a training platform and studying adaptive locomotion control for a four-wheeled-legged robot carrying loads, including off-center loads, across challenging terrain.',
+        tags: ['Wheeled-legged robot', 'Load adaptation', 'Challenging terrain', 'Motion control'],
+        images: [{ src: 'assets/wheeled-legged-training.gif', alt: 'Wheeled-legged robots in a simulated challenging-terrain training environment', caption: 'Wheeled-legged robot training in simulated challenging terrain', width: 800, height: 408 }],
+        work: [
+          { title: 'Training platform', description: 'Building a training environment with dynamic and off-center loads and challenging terrain to support policy training and evaluation.' },
+          { title: 'Adaptive control', description: 'Exploring locomotion control policies that adapt to changing loads and challenging terrain.' }
+        ]
+      },
       {
         "id": "underwater-robot",
         "title": "6-DOF Underwater Grasping Robot Development",
